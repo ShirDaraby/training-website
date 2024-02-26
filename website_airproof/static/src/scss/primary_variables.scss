@@ -1,0 +1,60 @@
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+  (
+    "color-palettes-name": "airproof",
+    "font": "Poppins",
+    "headings-font": "Poppins",
+    "navbar-font": "Poppins",
+    "buttons-font": "Poppins",
+  )
+);
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+  "Poppins": (
+    "family": (
+      "Poppins",
+      sans-serif,
+    ),
+    "url": "Poppins:400,500",
+    "properties": (
+      "base": (
+        "font-size-base": 1rem,
+      ),
+    ),
+  ),
+  "Proxima Nova": (
+    "family": (
+      "Proxima Nova Regular",
+      sans-serif,
+    ),
+    "properties": (
+      "base": (
+        "font-size-base": 1rem,
+      ),
+    ),
+  ),
+);
+
+$o-color-palettes: map-merge(
+  $o-color-palettes,
+  (
+    "airproof": (
+      "o-color-1": #bedb39,
+      "o-color-2": #2c3e50,
+      "o-color-3": #f2f2f2,
+      "o-color-4": #ffffff,
+      "o-color-5": #000000,
+    ),
+  )
+);
+
+$o-selected-color-palettes-names: append(
+  $o-selected-color-palettes-names,
+  "airproof"
+);

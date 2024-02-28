@@ -1,17 +1,4 @@
 //------------------------------------------------------------------------------
-// Website customizations
-//------------------------------------------------------------------------------
-
-$o-website-values-palettes: (
-  (
-    "color-palettes-name": "airproof",
-    "font": "Poppins",
-    "headings-font": "Poppins",
-    "navbar-font": "Poppins",
-    "buttons-font": "Poppins",
-  )
-);
-//------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
 
@@ -41,8 +28,7 @@ $o-theme-font-configs: (
   ),
 );
 
-$o-color-palettes: map-merge(
-  $o-color-palettes,
+$o-color-palettes: map-merge($o-color-palettes,
   (
     "airproof": (
       "o-color-1": #bedb39,
@@ -57,4 +43,17 @@ $o-color-palettes: map-merge(
 $o-selected-color-palettes-names: append(
   $o-selected-color-palettes-names,
   "airproof"
+);
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+  (
+    "color-palettes-name": "airproof",
+    "font": "Poppins",
+    "headings-font": "Poppins",
+    "navbar-font": "Poppins",
+    "buttons-font": "Poppins",
+  )
 );

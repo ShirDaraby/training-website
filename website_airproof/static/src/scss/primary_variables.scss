@@ -5,26 +5,26 @@
 $o-website-values-palettes: (
   (
     "color-palettes-name": "airproof",
+    // fonts size
+    'small-font-size': 0.625rem,
+    'font-size-base': 0.875rem,
+    'h1-font-size': 5rem,
+    'h2-font-size': 3.125rem,
+    //fonts
     "font": "Lato",
-    // "headings-font": "Space Grotesk",
     'headings-font': 'Space Grotesk',
-    // "font-size": 5rem,
-    // "font-size": calc(1.525rem + 3.3vw),
-    // "h1-font-size": calc(1.525rem + 3.3vw),
-    // 'display-1-font': 'Lato',
     "navbar-font": "Lato:700",
-    "buttons-font": "Poppins",
-    // "h1-font": "Space Grotesk",
     "h2-font": "Poppins",
     "h5-font": "Poppins",
+    "buttons-font": "Poppins",
+    // buttons
     "btn-padding-y": 0.75rem,
-    // "btn-border-radius": 0px, 10px, 10px, 10px,
     "btn-font-size": 1.25rem,
     "btn-secondary-outline": True,
-    'font-size-base': 0.875rem,
-    'small-font-size': 0.625rem,
   ),
 );
+
+
 //------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
@@ -37,27 +37,35 @@ $o-theme-font-configs: (
   ),
 
   "Space Grotesk": (
-    'family': (
-      "Space Grotesk",
-     sans-serif),
-    
-      'url': 'Space Grotesk:500,700',
-      'h1-font-size': 5rem,
-     'h2-font-size': 3.125rem,
-    
-
+    'family': ("Space Grotesk", sans-serif),
+    'url': 'Space Grotesk:500,700',
     "properties": (
       'base': (
         // "font-size: 2.5rem;"
         // "font-size": 80px,
-        'header-font-size':         (15 / 80) * 5rem,
+        // 'header-font-size':         (15 / 80) * 5rem,
         // 'font-size-base':           (15 / 80) * 5rem,
-       'font-size-base':            5rem,
-        "line-height": 5rem,
+      //  'font-size-base':            5rem,
+        // "line-height": 5rem,
       ),
     )
-  )
-)    
+   ),
+   
+
+   "Proxima Nova": (
+    "family": (
+      "Proxima Nova Regular",
+      sans-serif,
+    ),
+    "properties": (
+      "base": (
+        // "font-size-base": 1rem,
+        
+      ),
+    ),
+  ),
+);
+ 
 // $o-default-snippet-text-display-3 (
 // font-family:  
 // color: $font-color;
@@ -67,19 +75,6 @@ $o-theme-font-configs: (
 
 
 
-  "Proxima Nova": (
-    "family": (
-      "Proxima Nova Regular",
-      sans-serif,
-    ),
-    "properties": (
-      "base": (
-        "font-size-base": 1rem,
-        
-      ),
-    ),
-  ),
-);
 
 $o-color-palettes: map-merge(
   $o-color-palettes,

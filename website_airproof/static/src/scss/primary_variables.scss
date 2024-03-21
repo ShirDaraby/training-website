@@ -21,6 +21,9 @@ $o-website-values-palettes: (
     "btn-padding-y": 0.75rem,
     "btn-font-size": 1.25rem,
     "btn-secondary-outline": True,
+    'body-image': '/website_airproof/static/src/img/background-lines.svg',
+    'body-image-type': 'image' or 'pattern',
+    'header-template': 'airproof',
   ),
 );
 
@@ -85,6 +88,8 @@ $o-color-palettes: map-merge(
       "o-color-3": #8F8F8F,
       "o-color-4": #ffffff,
       "o-color-5": #000000,
+      'o-cc1-bg':  #ffffff,
+      'o-cc5-bg':  'o-color-5',
     ),
   )
 );

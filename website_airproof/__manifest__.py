@@ -5,6 +5,10 @@
    'depends': ['website'],
    'data': [
       # 'data/ir_asset.xml',
+      'data/presets.xml',
+   ],
+   'views':[
+     'views/website_templates.xml',  
    ],
     'assets': {
     'web._assets_primary_variables': [

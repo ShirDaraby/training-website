@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="header" model="ir.ui.view">
+        <field name="name">Airproof Header</field>
+        <field name="type">qweb</field>
+        <field name="key">website_airproof.header</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="mode">extension</field>
+        <field name="active">True</field>
+        <field name="arch" type="xml">
+    <!-- <template id="header" inherit_id="website.layout" name="Template Header Hamburger" active="True"> -->
+            <xpath expr="//header//nav" position="replace">
+            <span>Test Menu</span>
+                <!-- <t t-call="website.navbar"> -->
+                                <span>Test Menu</span>
+
+                <!-- </t> -->
+                <!-- <t t-call="website.template_header_mobile"> -->
+                    <!-- <t t-set="_txt_elt_content" t-valuef="phone_mail"/> -->
+                <!-- </t> -->
+            </xpath>
+        <!-- </field> -->
+    <!-- </record> -->
+        <!-- </template> -->
+
+</odoo>

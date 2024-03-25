@@ -5,7 +5,9 @@
    'depends': ['website'],
    'data': [
       # 'data/ir_asset.xml',
+      'data/menu.xml',
       'data/presets.xml',
+      'data/images.xml',
       'views/website_templates.xml', 
    ],
     'assets': {

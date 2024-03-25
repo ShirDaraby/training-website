@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<record id="logo" model="theme.ir.attachment">
-    <field name="name">Test Theme Custom Logo</field>
-    <field name="url">/theme_test_custo/static/src/img/logo.jpg</field>
-    <field name="key">theme_test_custo.logo</field>
-</record>
+    <record id="website.default_website" model="website">
+        <field name="logo" type="base64" file="website_airproof/static/src/img/logo.png"/>
+    </record>
 
 </odoo>

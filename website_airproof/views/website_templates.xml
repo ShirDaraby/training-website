@@ -48,26 +48,57 @@
                                     <t t-set="_txt_class" t-valuef="small"/>
                                     <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-end"/>
                                 </t>
-                                <!-- Sign In -->
+
+                                <!-- Sign in main edit
                                 <t t-call="portal.placeholder_user_sign_in">
-                                    <t t-set="_link_class" t-valuef="o_navlink_background_hover btn rounded-circle text-reset"/>
+                                    <t t-set="_item_class" t-valuef="nav-item"/>
+                                    <t t-set="_link_class" t-valuef="nav-link"/>
+                                </t> -->
+
+                                <!-- Sign in -->
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_item_class" t-valuef="nav-item"/>
+                                    <t t-set="_link_class" t-valuef="nav-link"/>
+                                    <t t-set="_user_name" t-value="true"/>
+                                    <t t-set="link_name">John Woo</t>
+                                    <t t-set="_link_url" t-value="#"/>
+                                    <t t-set="_icon" t-value="fa fa-sign-in-alt"/>
                                 </t>
+
+                                <!-- Sign In
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_icon" t-value="true"/>
+                                    <t t-set="_item_class" t-valuef="nav-item"/>
+                                    <t t-set="_link_class" t-valuef="nav-link"/>
+                                    <t t-set="_icon_class" t-valuef="fa-stack"/>
+                                    <t t-set="_icon_class" t-valuef="fa fa-sign-in-alt"/>
+                                    <t t-set="nav_links" t-value="fa fa-sign-in-alt"/>
+                                </t> -->
+
+                                
+                                
+                                <!-- User portal -->
+                                <!-- <t t-call="portal.user_sign_in_redirect">
+                                    <t t-set="_item_class" t-valuef="nav-item d-table-cell text-center"/>
+                                    <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                </t> -->
+
                                 <!-- User Dropdown -->
                                 <t t-call="portal.user_dropdown">
+                                    <t t-set="_user_name" t-value="true"/>
+                                    <t t-set="_icon" t-value="false"/>
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown"/>
+                                    <t t-set="_link_class" t-valuef="nav-link"/>
+                                    <t t-set="_dropdown_menu_class" t-valuef="position-absolute"/>
+                                </t>                              
+
+                                Call To Action
+                                <!-- <t t-call="website.placeholder_header_call_to_action">
                                     <t t-set="_icon" t-value="true"/>
-                                    <t t-set="_item_class" t-valuef="dropdown"/>
                                     <t t-set="_icon_class" t-valuef="fa-stack"/>
-                                    <t t-set="_link_class" t-valuef="o_navlink_background_hover btn d-flex align-items-center rounded-circle p-1 pe-2 text-reset"/>
-                                    <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-end"/>
-                                </t>
-                                <!-- language selector -->
-                                <t t-call="website.placeholder_header_language_selector">
-                                    <t t-set="_btn_class" t-valuef="nav-link btn-sm fw-bold o_nav-link_secondary"/>
-                                    <t t-set="_item_class" t-valuef="dropdown"/>
-                                    <t t-set="_txt_class" t-valuef="ms-1"/>
-                                    <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-end"/>
-                                    <t t-set="_item_class" t-valuef="position-relative"/>
-                                </t>
+                                    <t t-set="_item_class" t-valuef="flex-grow-1"/>
+                                    <t t-set="_div_class" t-valuef="d-flex align-items-center"/>
+                                </t> -->
                             </ul>
 
                         </div>

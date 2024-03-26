@@ -15,4 +15,10 @@
             <we-button title="airproof" data-customize-website-views="website_airproof.footer" data-customize-website-variable="'airproof'" data-img="/website_airproof/static/src/img/wbuilder/air_proof_header.jpeg"/>
         </xpath>
     </template>
+
+    <template id="portal.user_sign_in_redirect" name="User Sign In redirect" inherit_id="portal.user_sign_in" primary="True">
+        <xpath expr="//a" position="attributes">
+            <attribute name="t-attf-href">/web/login?redirect={{request.httprequest.path}}</attribute>
+        </xpath>
+    </template>
 </odoo>

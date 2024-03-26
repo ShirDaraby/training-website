@@ -41,6 +41,13 @@
                                 <t t-set="_link_class" t-valuef="mw-100 mx-auto"/>
                             </t>
                             <ul class="o_header_hamburger_right_col navbar-nav flex-row gap-2 align-items-center ms-auto">
+                                <!-- Language Selector -->
+                                <t t-call="website.placeholder_header_language_selector">
+                                    <t t-set="_div_classes" t-valuef="h-100 border-start o_border_contrast"/>
+                                    <t t-set="_btn_class" t-valuef="o_navlink_background_hover h-100 rounded-0 text-reset"/>
+                                    <t t-set="_txt_class" t-valuef="small"/>
+                                    <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-end"/>
+                                </t>
                                 <!-- Sign In -->
                                 <t t-call="portal.placeholder_user_sign_in">
                                     <t t-set="_link_class" t-valuef="o_navlink_background_hover btn rounded-circle text-reset"/>

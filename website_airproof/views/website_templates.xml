@@ -42,6 +42,7 @@
                             </t>
                             <ul class="o_header_hamburger_right_col navbar-nav flex-row gap-2 align-items-center ms-auto">
                                 <!-- Language Selector -->
+                                <!-- You can delete this language selector -->
                                 <t t-call="website.placeholder_header_language_selector">
                                     <t t-set="_div_classes" t-valuef="h-100 border-start o_border_contrast"/>
                                     <t t-set="_btn_class" t-valuef="o_navlink_background_hover h-100 rounded-0 text-reset"/>
@@ -88,9 +89,12 @@
         <field name="arch" type="xml">
             <xpath expr="//div[@id='footer']" position="replace">
                 <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                    <!-- You can include the newsletter block directly in the footer as it is displayed on all pages -->
+                    <!-- 'style="background-image: none;"' can be deleted everywhere -->
                     <section class="s_text_block pt48 pb16" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
                         <div class="container">
                             <div class="row o_grid_mode" data-row-count="5">
+                                <!-- Simple colums are enough: no need to use the grid system -->
                                 <div class="o_colored_level o_grid_item g-col-lg-2 g-height-5 col-lg-2" style="grid-area: 1 / 1 / 6 / 3; z-index: 1;">
                                     <h5>Explore</h5>
                                     <ul class="list-unstyled">

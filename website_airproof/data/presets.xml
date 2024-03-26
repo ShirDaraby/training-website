@@ -9,9 +9,11 @@
 
     <template id="template_header_opt" inherit_id="website.snippet_options" name="Header Template - Option">
         <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+            <!-- Try to keep a similar format as the existing thumbnails for the preview image -->
             <we-button title="airproof" data-customize-website-views="header" data-customize-website-variable="'airproof'" data-img="/website_airproof/static/src/img/wbuilder/air_proof_header.jpeg"/>
         </xpath>
         <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+            <!-- Try to keep a similar format as the existing thumbnails for the preview image -->
             <we-button title="airproof" data-customize-website-views="website_airproof.footer" data-customize-website-variable="'airproof'" data-img="/website_airproof/static/src/img/wbuilder/air_proof_header.jpeg"/>
         </xpath>
     </template>

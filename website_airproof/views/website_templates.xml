@@ -60,6 +60,14 @@
                                     <t t-set="_link_class" t-valuef="o_navlink_background_hover btn d-flex align-items-center rounded-circle p-1 pe-2 text-reset"/>
                                     <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-end"/>
                                 </t>
+                                <!-- language selector -->
+                                <t t-call="website.placeholder_header_language_selector">
+                                    <t t-set="_btn_class" t-valuef="nav-link btn-sm fw-bold o_nav-link_secondary"/>
+                                    <t t-set="_item_class" t-valuef="dropdown"/>
+                                    <t t-set="_txt_class" t-valuef="ms-1"/>
+                                    <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-end"/>
+                                    <t t-set="_item_class" t-valuef="position-relative"/>
+                                </t>
                             </ul>
 
                         </div>

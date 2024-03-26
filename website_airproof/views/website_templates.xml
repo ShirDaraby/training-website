@@ -61,8 +61,7 @@
                                     <t t-set="_link_class" t-valuef="nav-link"/>
                                     <t t-set="_user_name" t-value="true"/>
                                     <t t-set="link_name">John Woo</t>
-                                    <t t-set="_link_url" t-value="#"/>
-                                    <t t-set="_icon" t-value="fa fa-sign-in-alt"/>
+                                    <t t-set="_icon" t-value="True"/>
                                 </t>
 
                                 <!-- Sign In

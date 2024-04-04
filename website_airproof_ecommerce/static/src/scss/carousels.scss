@@ -1,0 +1,49 @@
+#wrapwrap {
+  .o_carousel_product_card:hover {
+    background-color: o-color('o-color-3');
+      .o_carousel_product_card_img_top {
+        background-color: o-color('o-color-3');
+        mix-blend-mode: multiply;
+      }
+  }
+
+  .s_dynamic_snippet_products .dynamic_snippet_template .carousel-item .row {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    > div {
+      padding-top: 12px !important;
+    }
+  }
+  
+  .carousel-control-next .fa, .carousel-control-prev .fa {
+    display: none;
+  }
+
+  .carousel-control-next:after, .carousel-control-prev:after {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 99px;
+    content: "";
+  }
+
+  .carousel-control-next:after {
+    @include o-position-absolute($left: 0);
+    background: o-color('o-color-3') url("/web/image/website_airproof_ecommerce.img_arrow_right") no-repeat center;
+  }
+
+  .carousel-control-prev:after {
+    @include o-position-absolute($right: 0);
+    background: o-color('o-color-3') url("/web/image/website_airproof_ecommerce.img_arrow_left") no-repeat center;
+  }
+
+  .s_dynamic_snippet_products {
+    .carousel-control-next:after {
+      left: 70px;
+    }
+    .carousel-control-prev:after {
+      right: 70px;
+    }
+  }
+}
+  

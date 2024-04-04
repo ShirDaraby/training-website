@@ -1,0 +1,39 @@
+#wrapwrap {
+    .breadcrumb {
+        background-color: white;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        display: inline-block;
+        content: '';
+        background-image: url('/web/image/website_airproof_ecommerce.img_angle_right');
+        background-repeat: no-repeat;
+        border: none;
+        vertical-align: middle;
+        width: 10px;
+        height: 10px;
+    }
+
+    #o-carousel-product .carousel-outer .carousel-inner img {
+        margin: 30px;
+        border-radius: 20px;
+        height: 90%;
+        width: auto;
+        box-shadow: 0px 0px 15px rgb(205, 205, 205);
+    }
+
+    #o-carousel-product .carousel-indicators {
+        justify-content: center !important;
+        padding: 15px;
+        li, li.active {
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px rgb(205, 205, 205)
+        }
+    }
+
+    .ecom-zoomable .oe_structure_not_nearest {
+        margin-top: 0px !important;
+    }
+}
+  

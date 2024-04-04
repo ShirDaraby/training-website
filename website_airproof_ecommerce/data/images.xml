@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Branding -->
+    <record id="logo" model="ir.attachment">
+        <field name="name">Logo Airproof</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/logos/airproof_logo.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="website.default_website" model="website">
+        <field name="logo" type="base64" file="website_airproof_ecommerce/static/src/img/logos/airproof_logo.svg"/>
+    </record>
+
+    <!-- Content -->
+   
+    <!-- ICONS -->
+    <record id="img_arrow" model="ir.attachment">
+        <field name="name">Arrow icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/arrow.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_arrow_white" model="ir.attachment">
+        <field name="name">Arrow icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/arrow_white.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+     <record id="img_arrow_small" model="ir.attachment">
+        <field name="name">Arrow icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/arrow-small.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_4k" model="ir.attachment">
+        <field name="name">4K icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/4k.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_control" model="ir.attachment">
+        <field name="name">Control icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/control.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_drop" model="ir.attachment">
+        <field name="name">Drop icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/drop.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_envelop" model="ir.attachment">
+        <field name="name">Envelop icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/envelop.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_envelop_black" model="ir.attachment">
+        <field name="name">Black Envelop icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/envelop_black.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_glasses" model="ir.attachment">
+        <field name="name">Glasses icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/glasses.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_hand_drone" model="ir.attachment">
+        <field name="name">Hand with drone icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/hand_drone.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_phone" model="ir.attachment">
+        <field name="name">Phone icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/phone.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_phone_black" model="ir.attachment">
+        <field name="name">Black Phone icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/phone_black.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_shopping" model="ir.attachment">
+        <field name="name">Shopping icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/shopping.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_check" model="ir.attachment">
+        <field name="name">Check icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/check.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_check_small" model="ir.attachment">
+        <field name="name">Check icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/check-small.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_user" model="ir.attachment">
+        <field name="name">User icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/user.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_arrow_left" model="ir.attachment">
+        <field name="name">Arrow left icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/arrow-left.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_arrow_right" model="ir.attachment">
+        <field name="name">Arrow right icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/arrow-right.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_angle_down" model="ir.attachment">
+        <field name="name">Angle down icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/angle-down-solid.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_angle_right" model="ir.attachment">
+        <field name="name">Angle right icon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/icons/angle-right-solid.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- NAVIGATION -->
+    <!-- PHOTOS MEGAMENU -->
+    <record id="img_mini" model="ir.attachment">
+        <field name="name">Drone Airproof Mini</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/airproof-mini.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_pro" model="ir.attachment">
+        <field name="name">Drone Airproof Pro</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/airproof-pro.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_robin" model="ir.attachment">
+        <field name="name">Drone Airproof Robin</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/airproof-robin.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_falcon" model="ir.attachment">
+        <field name="name">Drone Airproof Falcon</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/airproof-falcon.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_eagle" model="ir.attachment">
+        <field name="name">Drone Airproof Eagle</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/airproof-eagle.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- HOMEPAGE -->
+    <!-- PHOTOS -->
+    <record id="img_drone" model="ir.attachment">
+        <field name="name">Drone picture</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/drone_home.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_drone_robin" model="ir.attachment">
+        <field name="name">Drone Robin picture</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/drone_robin.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_accessories" model="ir.attachment">
+        <field name="name">Drone accessories picture</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/accessories.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_school" model="ir.attachment">
+        <field name="name">Drone school picture</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/school.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_drone_flying" model="ir.attachment">
+        <field name="name">Drone flying picture</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/drone_flying.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_sticker" model="ir.attachment">
+        <field name="name">Sticker logo</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/sticker.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- ABOUT US PAGE -->
+    <!-- PHOTOS -->
+    <record id="img_drinking" model="ir.attachment">
+        <field name="name">People enjoying a drink</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/drinking.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_memory" model="ir.attachment">
+        <field name="name">Drone and memory card</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/memory.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_topview2" model="ir.attachment">
+        <field name="name">Topview</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/topview2.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_drone_sky" model="ir.attachment">
+        <field name="name">Drone in the sky flying</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/dronesky.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- PRODUCT PAGE -->
+    <!-- PHOTOS -->
+    <record id="img_drone_bluebg" model="ir.attachment">
+        <field name="name">Drone picture</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/drone_bluebg.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_detail_1" model="ir.attachment">
+        <field name="name">Drone detail</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/detail-1.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_detail_2" model="ir.attachment">
+        <field name="name">Drone detail</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/detail-2.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_detail_3" model="ir.attachment">
+        <field name="name">Drone detail</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/detail-3.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_warranty" model="ir.attachment">
+        <field name="name">Warranty</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/warranty.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_accessory" model="ir.attachment">
+        <field name="name">Drone accessory</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/accessory.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- CONTACT -->
+    <!-- PHOTOS -->
+    <record id="img_topview" model="ir.attachment">
+        <field name="name">Topview</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/topview.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- ERROR PAGE -->
+    <!-- PHOTOS -->
+    <record id="img_error" model="ir.attachment">
+        <field name="name">Error visual</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/error.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+
+    <!-- SHOP PAGE -->
+    <!-- PHOTOS -->
+    <record id="img_topview3" model="ir.attachment">
+        <field name="name">Topview</field>
+        <field name="datas" type="base64" file="website_airproof_ecommerce/static/src/img/photos/topview3.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- Images for carousel product pages -->
+    <record id="product_image_1" model="product.image">
+        <field name="name">Drone detail 1</field>
+        <field name="image_1920" type="base64" file="website_airproof_ecommerce/static/src/img/photos/detail-1.png"/>
+        <field name="product_tmpl_id" ref="product_airproof_mini" />
+    </record>
+
+    <record id="product_image_2" model="product.image">
+        <field name="name">Drone detail 2</field>
+        <field name="image_1920" type="base64" file="website_airproof_ecommerce/static/src/img/photos/detail-2.png"/>
+        <field name="product_tmpl_id" ref="product_airproof_mini" />
+    </record>
+
+    <record id="product_image_3" model="product.image">
+        <field name="name">Drone detail 3</field>
+        <field name="image_1920" type="base64" file="website_airproof_ecommerce/static/src/img/photos/detail-3.png"/>
+        <field name="product_tmpl_id" ref="product_airproof_mini" />
+    </record>
+
+    <record id="product_image_4" model="product.image">
+        <field name="name">Drone detail 1</field>
+        <field name="image_1920" type="base64" file="website_airproof_ecommerce/static/src/img/photos/detail-1.png"/>
+        <field name="product_tmpl_id" ref="product_airproof_eagle" />
+    </record>
+
+    <record id="product_image_5" model="product.image">
+        <field name="name">Drone detail 2</field>
+        <field name="image_1920" type="base64" file="website_airproof_ecommerce/static/src/img/photos/detail-2.png"/>
+        <field name="product_tmpl_id" ref="product_airproof_eagle" />
+    </record>
+
+    <record id="product_image_6" model="product.image">
+        <field name="name">Drone detail 3</field>
+        <field name="image_1920" type="base64" file="website_airproof_ecommerce/static/src/img/photos/detail-3.png"/>
+        <field name="product_tmpl_id" ref="product_airproof_eagle" />
+    </record>
+
+</odoo>

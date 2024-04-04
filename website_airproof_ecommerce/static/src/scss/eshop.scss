@@ -1,0 +1,101 @@
+#wrapwrap {
+  .products_header .o_sortby_dropdown {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0px !important;
+    justify-content: space-between;
+  }
+
+  .products_header .o_sortby_dropdown, .o_wsale_filmstip .btn {
+    padding: 2px 16px;
+    background-color: white;
+    border: 1px solid o-color('o-color-3');
+  }
+
+  .form-check-input {
+    border: 1px solid black !important;
+    border-radius: 3px;
+  }
+
+  .form-check-input[checked=checked] {
+    background-color: o-color('o-color-3');
+  }
+
+  .o_wsale_product_information_text h6, #s_dynamic_snippet_3 .card-title {
+    font-weight: bold !important;
+  }
+
+  .product_price span, .o_carousel_product_card_body span[data-oe-type="monetary"] {
+    font-weight: bold !important;
+    font-size: 24px !important;
+  }
+
+  .o_wsale_product_grid_wrapper form, .o_carousel_product_card {
+    transition: all .2s ease-in-out;
+    &:hover { 
+      transform: translate(-10px, -10px);
+      border: none;
+    }
+  }
+
+  .o_wsale_product_grid_wrapper form {
+    &:hover {
+      background-color: o-color('o-color-2');
+      mix-blend-mode: multiply;
+      .img-fluid {
+        background-color: o-color('o-color-2');
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+
+  .products_categories .custom-control-label::before, .products_categories .custom-control-label::after {
+    content: "";
+    @include o-position-absolute($top: 0, $left: -1.5rem);
+    display: none;
+    width: 0rem;
+    height: 0rem;
+    border: 1px solid #ffffff;
+    pointer-events: none;
+    background-color: #FFFFFF;
+  }
+
+  .products_categories .custom-control {
+    input[type="radio"]:checked+label { 
+      background-color: o-color('o-color-3'); 
+    }
+    label:hover, label:active {
+      background-color: o-color('o-color-3');
+    }
+  }
+
+  .products_attributes_filters a[href="/shop"] {
+    background-color: o-color('o-color-3');
+    border: none;
+    padding: 10px !important;
+  }
+
+  .oe_website_sale #products_grid_before .custom-control.custom-checkbox .custom-control-input ~ .custom-control-label:before {
+    border: 2px solid black;
+    border-radius: 3px;
+  }
+
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: o-color('o-color-3'); 
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    border: 2px solid black;
+    border-radius: 3px;
+  }
+
+  #product_detail ~ .oe_structure.oe_empty > section:first-child {
+    border-top: none;
+  }
+
+  #products_grid_before button {
+    border: none;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    background-color: o-color('o-color-3');
+  }
+}
+  

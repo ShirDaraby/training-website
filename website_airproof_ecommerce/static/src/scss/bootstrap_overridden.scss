@@ -1,0 +1,62 @@
+// Typography
+$h1-font-size:                              3.125rem !default;
+$h2-font-size:                              2.5rem !default;
+$h3-font-size:                              2rem !default;
+$h4-font-size:                              1.75rem !default;
+$h5-font-size:                              1.5rem !default;
+$h6-font-size:                              1.25rem !default;
+$enable-responsive-font-sizes:              true;
+
+$headings-font-weight:                      700;
+$font-weight-normal:                        400 !important;
+$font-weight-light:                         300 !default;
+
+$line-height-lg:                            1 !default;
+$line-height-sm:                            1.5 !default;
+$line-height-base:                          1.5 !default;
+$headings-line-height:                      1.1 !default;
+$headings-font-weight:                      400 !default;
+
+$small-font-size:                           87.5% !default;
+
+// Badges
+$badge-border-radius:                       10rem !default;
+
+//navigation
+$navbar-light-color:                        o-color('o-color-1');
+$navbar-light-active-color:                 o-color('o-color-1');
+$navbar-light-hover-color:                  o-color('o-color-1');
+$navbar-light-disabled-color:               rgba(o-color('o-color-1'), .5);
+$navbar-padding-y:                          1.4rem;
+
+//forms
+$input-border-radius:                       10px;
+$input-border-color:                        black;
+$input-border-width:                        1px;
+
+//borders
+$border-radius:                             20px;
+$border-radius-sm:                          10px;
+$border-radius-lg:                          30px;
+
+// CUSTOM z-index for Bootstrap v4.3.1 https://getbootstrap.com/docs/5.3/utilities/z-index/
+$zindex-levels: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$zindex-levels: map-merge(
+  (
+    0: 0,
+    1: 1,
+    2: 2,
+    3: 3
+  ),
+  $zindex-levels
+);
+
+@each $size, $length in $zindex-levels {
+  .z-index-#{$size} { z-index: $length !important; }
+
+   @if $size != 0 {
+    .z-index-n#{$size} { z-index: -$length !important; }
+   }
+}
+

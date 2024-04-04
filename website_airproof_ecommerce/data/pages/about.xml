@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- About us -->
+<record id="page_aboutus" model="website.page">
+    <field name="name">About us</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_airproof_ecommerce.page_aboutus</field>
+    <field name="url">/about-us</field>
+    <field name="website_id">1</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t name="About us" t-name="website_airproof_ecommerce.page_aboutus">
+            <!-- Title -->
+            <t t-set="additional_title" t-value="'About us'"/>
+            <!-- Content -->
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure">
+
+                    <section class="s_title bg-black-50 o_colored_level s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center pt88 pb88" data-vcss="001" data-snippet="s_title" data-scroll-background-ratio="0" data-name="Title" style="background-image: url(&quot;/web/image/website_airproof_ecommerce.img_topview2&quot;);" data-mimetype="image/png" data-resize-width="1439">
+                        <div class="o_we_bg_filter bg-black-50"/>
+                        <div class="container">
+                            <h2 class="text-center">About us</h2>
+                        </div>
+                    </section>
+
+                    <section class="s_text_block o_colored_level pt72 pb8" data-snippet="s_text_block" data-name="Text" >
+                        <div class="s_allow_columns o_container_small">
+                            <p class="text-center lead font-weight-bold">
+                                Today, Airproof products are redefining industries. Professionals in filmmaking, agriculture, conservation, search and rescue, energy infrastructure, and more trust Airproof to bring new perspectives to their work and help them accomplish feats safer, faster, and with greater efficiency than ever before.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="s_text_image o_colored_level pb32 pt16" data-snippet="s_image_text" data-name="Image - Text">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                    <img src="/web/image/website_airproof_ecommerce.img_drinking" alt="people having a drink" class="img img-fluid mx-auto o_we_image_cropped rounded-right rounded-bottom" data-mimetype="image/png" data-resize-width="690" />
+                                </div>
+
+                                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                    <h6 class="text-o-color-5">THE FUTURE IS HERE</h6>
+                                    <h2>Our platforms empower them to capture images that were once out of reach</h2>
+                                    <p>Our flying and camera stabilization systems redefine camera placement and motion. Amazing photos and video, treasured personal memories, and high-end professional imagery are captured every day, in every corner of the world using Airproof products.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="s_text_block o_colored_level pt16" data-snippet="s_text_block" data-name="Text" >
+                        <div class="s_allow_columns o_container_small">
+                            <p class="text-center lead font-weight-bold">
+                                Our offices can now be found in the United States, Germany, the Netherlands, Japan, South Korea, Beijing, Shanghai, and Hong Kong. As a privately owned and operated company, Airproof focuses on our own vision, supporting creative, commercial, and nonprofit applications of our technology.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image" data-name="Text - Image">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                    <h6 class="text-o-color-5">EASY-TO-USE DEVICES</h6>
+                                    <h2>We do this through an unparalleled commitment to R&amp;amp;D, a culture of constant innovation and curiosity</h2>
+                                    <p>Building on the ethos of “form follows function,” our products combine advanced technology with dynamic designs.</p>
+                                </div>
+
+                                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                    <img src="/web/image/website_airproof_ecommerce.img_memory" alt="Memory card visual" class="img img-fluid mx-auto rounded-left rounded-bottom mx-auto" data-mimetype="image/png" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Block creativity -->
+                    <section class="s_text_image o_colored_level o_cc o_cc3 pt48 pb48" data-snippet="s_text_image" data-name="Text - Image" data-oe-shape-data="{'shape':'illustration/airproof/waves3','colors':{'c1':'#81C4EF'}}">
+                        <div class="o_we_shape o_illustration_airproof_waves3" style="background-image: url(/web_editor/shape/illustration/airproof/waves3.svg?c1=%2381C4EF);"/>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="pt16 pb16 o_colored_level col-lg-5">
+                                    <h1>Creativity is at the heart of every dream.</h1>
+                                    <p>Every idea, every groundbreaking leap that changes our world starts with<font class="bg-o-color-4">the vision of talented.</font> We give  creators the tools they need to bring their ideas to life.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="mb-2 btn btn-secondary btn-lg x_btn_shape" >Read more<img src="/web/image/website_airproof_ecommerce.img_arrow" alt="Arrow icon" class="img img-fluid ml-2" /></a>
+                                        <br/>
+                                    </p>
+                                </div>
+                                <div class="pt16 pb16 o_colored_level col-lg-6 offset-lg-1">
+                                    <img src="/web/image/website_airproof_ecommerce.img_drone_sky" alt="Drone in the sky" class="img img-fluid mx-auto" data-mimetype="image/png" data-resize-width="690"/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

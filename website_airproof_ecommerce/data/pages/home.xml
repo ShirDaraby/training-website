@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Disable Default Home -->
+<record id="website.homepage" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!-- Home -->
+<record id="page_home" model="website.page">
+    <field name="name">Home</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_airproof_ecommerce.page_home</field>
+    <field name="url">/</field>
+    <field name="website_id">1</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t name="Home" t-name="website_airproof_ecommerce.page_home">
+            <!-- Title -->
+            <t t-set="additional_title" t-value="'Airproof homepage'"/>
+            <!-- Content -->
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure">
+                    
+                    <!-- Main banner -->
+                    <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+                        <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" id="s_carousel_homepage">
+                            <ol class="carousel-indicators o_we_no_overlay d-none">
+                                <li data-slide-to="0" class="active" data-target="#s_carousel_homepage" aria-current="true"/>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item o_colored_level bg-white pt64 pb64 active" data-name="Slide">  
+                                    <div class="oe_unremovable container">
+                                        <div class="row content">
+                                            <div class="carousel-content o_colored_level col-lg-6 pt88 position-relative">
+                                                <img src="/web/image/website_airproof_ecommerce.img_sticker" class="img img-fluid position-absolute x_sticker" data-mimetype="image/png" />
+
+                                                <h1 class="x_big_title position-relative z-index-1">
+                                                    One step
+                                                    <br/>
+                                                    beyond
+                                                    <br/>
+                                                    the horizon
+                                                </h1>
+                                                <p class="lead font-weight-bold">
+                                                    We create custom waterproof drones <br/>for professional pilots.</p>
+                                                <p>
+                                                    <a href="/shop" class="mb-2 btn btn-custom x_btn_shape text-o-color-1 bg-o-color-4 btn-lg x_btn_outlined" style="border-width: 2px; border-style: solid; border-color: rgb(0, 0, 0);" >​​
+                                                        Discover our drones
+                                                        <img src="/web/image/website_airproof_ecommerce.img_arrow" alt="Arrow icon" class="img img-fluid ml-2" />
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div class="carousel-content o_colored_level col-lg-6 position-relative">
+                                                <div class="position-absolute z-index-1 col-6 col-md-4" style="bottom: 0; right: 0;">
+                                                    <div class="x_bubble x_bubble1 bg-white mb-3">
+                                                        <p class="pb8 m-0"><strong>Best drone of the year</strong></p>
+                                                        <p class="m-0" style="font-size: 12px;">GQ France</p>
+                                                        
+                                                    </div>
+                                                    <div class="x_bubble x_bubble2 bg-white">
+                                                        <div class="s_rating_icons o_not_editable pb8">
+                                                            <span class="s_rating_active_icons">
+                                                                <i class="fa fa-star"/>
+                                                                <i class="fa fa-star"/>
+                                                                <i class="fa fa-star"/>
+                                                                <i class="fa fa-star"/>
+                                                            </span>
+                                                            <span class="s_rating_inactive_icons">
+                                                                <i class="fa fa-star-o"/>
+                                                            </span>
+                                                        </div>
+                                                        <p class="m-0" style="font-size: 14px;">
+                                                            <strong style="font-size: 16px;">1000+</strong> reviews
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                <img src="/web/image/website_airproof_ecommerce.img_drone" class="img img-fluid position-relative" data-mimetype="image/png" alt="Drone" />​
+                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev o_not_editable o_we_no_overlay d-none" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#s_carousel_homepage">
+                                <span class="carousel-control-prev-icon"/>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+
+                            <a class="carousel-control-next o_not_editable o_we_no_overlay d-none" data-slide="next" role="img" aria-label="Next" title="Next" href="#s_carousel_homepage">
+                                <span class="carousel-control-next-icon"/>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+
+                        </div>
+                    </section>
+
+                    <!-- 3 sections -->
+                    <section class="s_color_blocks_2 o_colored_level pt32 pb32 o_cc o_cc1" data-snippet="s_color_blocks_2" data-name="Big Boxes" data-oe-shape-data="{'shape':'illustration/airproof/texture','colors':{'c1':'#BBE1FA'},'flip':[]}">
+                        <div class="o_we_shape o_illustration_airproof_texture" style="background-image: url(/web_editor/shape/illustration/airproof/texture.svg?c1=%23BBE1FA);"/>
+                        <div class="container">
+
+                        <div class="row">
+
+                            <div class=" o_colored_level o_cc o_cc1 col-lg-12 pt-0 pl-0 pr-0 pb-4 x_group1" >
+                                <div class="oe_img_bg o_bg_img_center p-5 rounded-top x_group_child d-flex flex-row align-items-start text-left" style="background-image: url(&quot;/web/image/website_airproof_ecommerce.img_drone_robin&quot;);" data-mimetype="image/png">
+                                    <div>
+                                        <h2 class="text-white">Airproof Robin
+                                        </h2>
+                                        <h4 class="text-o-color-3 pb-4">The dream drone is here</h4>
+                                        <p>
+                                            <a href="/shop/airproof-robin-3" class="btn btn-secondary text-o-color-1 bg-o-color-4">Discover more</a>
+                                        </p>
+                                    </div>
+                                </div>      
+                            </div>
+
+                            <div class=" o_colored_level o_cc o_cc4 col-lg-6 pt-0 pl-0 pr-4 pb-0 x_group2" style="background-color: inherit;">
+                                <div class="oe_img_bg o_bg_img_center p-5 d-flex flex-column justify-content-end x_group_child text-left" style="background-image: url(&quot;/web/image/website_airproof_ecommerce.img_accessories&quot;);" data-mimetype="image/png" >
+                                    <h2>Accessories</h2>
+                                    <h4 class="text-o-color-3 pb-4">Customize your drone</h4>
+                                    <p>
+                                        <a href="/shop/category/accesories-2">
+                                            <font class="text-o-color-4">Discover more<img src="/web/image/website_airproof_ecommerce.img_arrow_white" alt="Arrow icon" class="img img-fluid ml-2" /></font>
+                                        </a>
+                                    </p>      
+                                </div>      
+                            </div>
+
+                            <div class=" o_colored_level o_cc o_cc4 col-lg-6 p-0 x_group3" style="background-color: inherit;">
+                                <div class="oe_img_bg o_bg_img_center p-5 d-flex flex-column justify-content-end x_group_child text-left" style="background-image: url(&quot;/web/image/website_airproof_ecommerce.img_school&quot;);" data-mimetype="image/png" >
+                                    <h2>Airproof school</h2>
+                                    <h4 class="text-o-color-3 pb-4">Become an expert pilot
+                                    </h4>
+                                    <p>
+                                        <a href="/" target="_blank">
+                                        <font class="text-o-color-4">Discover more<img src="/web/image/website_airproof_ecommerce.img_arrow_white" alt="Arrow icon" class="img img-fluid ml-2" /></font>
+                                        </a>
+                                    </p>
+                                </div>      
+                            </div>
+
+                        </div>
+                        </div>
+                    </section>
+
+                    <!-- Best drone title + 4 columns -->
+                    <section class="s_text_block o_colored_level o_cc o_cc3 pt64 pb32" data-snippet="s_text_block" data-name="Text" style="background-image: linear-gradient(rgb(187, 225, 250) 10%, rgb(11, 143, 229) 85%);" data-oe-shape-data="{'shape':'illustration/airproof/waves2','colors':{'c1':'#BBE1FA'},'flip':[]}">
+                        <div class="o_we_shape o_illustration_airproof_waves2" style="background-image: url(/web_editor/shape/illustration/airproof/waves2.svg?c1=%23BBE1FA);"/>
+
+                        <div class="s_allow_columns o_container_small">
+                            <h1 class="text-center text-o-color-4">Best drone of the year</h1>
+                            <p class="lead font-weight-bold text-center text-o-color-4">We do this through an unparalleled commitment to R&amp;amp;D, a culture of constant innovation and curiosity, and a focus on transforming complex technology into easy-to-use devices.
+                            </p>
+                        </div>
+
+                        <div class="container">
+                            <div class="row" style="min-height: 325px;">
+
+                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-end">
+                                    <div class="o_cc o_cc2 rounded-circle x_circle mx-auto d-flex justify-content-center align-items-center">
+                                        <img src="/web/image/website_airproof_ecommerce.img_glasses" alt="Glasses icon"  data-mimetype="image/svg" />
+                                    </div>
+                                    <h3 class="mt-3 text-o-color-4">Immersive Flight</h3>
+                                    <p class="text-o-color-4">Thanks to our&amp;nbsp;<br/>Next Gen Goggles
+                                    </p>
+                                </div>
+
+                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-start">
+                                    <div class="o_cc o_cc1 rounded-circle x_circle mx-auto d-flex justify-content-center align-items-center">
+                                        <img src="/web/image/website_airproof_ecommerce.img_4k" alt="4K image"  data-mimetype="image/svg" />
+                                    </div>
+                                    <h3 class="mt-3 text-o-color-4">4K Video
+                                    </h3>
+                                    <p class="text-o-color-4">Don’t compromise&amp;nbsp;<br/>on video quality</p>
+                                </div>
+                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-end">
+                                    <div class="o_cc o_cc2 rounded-circle x_circle mx-auto d-flex justify-content-center align-items-center">
+                                        <img src="/web/image/website_airproof_ecommerce.img_hand_drone" alt="drone hold in hand"  data-mimetype="image/svg" />
+                                    </div>
+                                    <h3 class="mt-3 text-o-color-4">Palm-Sized</h3>
+                                    <p class="text-o-color-4">Small but filled&amp;nbsp;<br/>with advanced features</p>
+                                </div>
+                                <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-start">
+                                    <div class="o_cc o_cc1 rounded-circle x_circle mx-auto d-flex justify-content-center align-items-center">
+                                        <img src="/web/image/website_airproof_ecommerce.img_control" alt="Control icon"  data-mimetype="image/svg" />
+                                    </div>
+                                    <h3 class="mt-3 text-o-color-4">Intuitive Control</h3>
+                                    <p class="text-o-color-4">Squeeze the trigger&amp;nbsp;<br/>and bolt forward</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- Products title -->
+                    <section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-color: rgb(12, 143, 229) !important;">
+                        <div class="s_allow_columns container">
+                            <h1 class="text-white">Our latest products</h1>
+                        </div>
+                    </section>
+                    <!-- Custom block products -->
+                    <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic pb32 o_colored_level s_product_product_airproof o_dynamic_empty" data-name="Products" style="background-color: #0C8FE5;" data-filter-id="3" data-template-key="website_airproof_ecommerce.dynamic_filter_template_product_product_airproof" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="8" data-carousel-interval="5000">
+                        
+                        <div class="container o_not_editable">
+                            <div class="css_non_editable_mode_hidden">
+                                <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                            Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                                        </div>
+                            </div>
+                        <div class="dynamic_snippet_template"/>
+                        </div>
+                    </section>
+
+
+                    <!-- Tik tok -->
+                    <section class="s_text_image o_colored_level o_cc o_cc5 pt96 pb96" data-snippet="s_image_text" data-name="Image - Text" style="background:#0C8FE5;" data-oe-shape-data="{'shape':'illustration/airproof/waves','colors':{'c1':'#BBE1FA'},'flip':[]}">
+                        
+                        <div class="o_we_shape o_illustration_airproof_waves" style="background-image: url(/web_editor/shape/illustration/airproof/waves.svg?c1=%23BBE1FA);"/>
+
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                    <img src="/web/image/website_airproof_ecommerce.img_drone_flying" class="img img-fluid mx-auto o_we_image_cropped rounded-right rounded-bottom" alt="Drone flying" data-x="175" data-width="449.99999999999994" data-height="449.99999999999994" data-scale-x="1" data-scale-y="1" data-aspect-ratio="1/1" />
+                                </div>
+
+                                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                    <h6 class="text-o-color-3">THE SKY IS THE LIMIT</h6>
+                                    <h1 class="pb-4">The TikTok Creator's <br/>Dream Drone</h1>
+                                    <p class="pb-3 lead font-weight-bold">This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="mb-2 btn btn-secondary btn-lg x_btn_shape" >Read more<img src="/web/image/website_airproof_ecommerce.img_arrow" alt="arrow icon" class="img img-fluid ml-2" /></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

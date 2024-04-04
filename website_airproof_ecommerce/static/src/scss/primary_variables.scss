@@ -1,0 +1,107 @@
+// ------------------------------------------------------------------------------ //
+// PRESETS
+// ------------------------------------------------------------------------------ //
+
+$o-website-values-palettes: (
+    (
+
+        // Fonts
+        'font':                             'Lato',
+        'headings-font':                    'Space Grotesk',
+        'navbar-font':                      'Lato',
+        'buttons-font':                     'Lato',
+
+        // Header
+        'hamburger-position':               'center',
+        'header-font-size':                  0.875rem,
+        'header-template':                  'airproof',
+        'footer-template':                  'airproof',
+
+        // Links
+        'link-underline':                   'never',
+
+        // Colors
+        'color-palettes-name':              'airproof',
+
+        // Btn
+        'btn-border-radius':                10px,
+        'btn-border-radius-sm':             10px,
+        'btn-border-radius-lg':             10px,
+        'btn-font-size-lg':                 1rem,
+        'btn-font-size':                    0.875rem,
+        'btn-font-size-sm':                 0.875rem,
+        'btn-padding-y-lg':                 15px,
+        'btn-padding-x-lg':                 25px,
+        'btn-padding-y':                    8px,
+        'btn-padding-x':                    20px,
+        'btn-border-width':                 0,
+    ),
+
+);
+
+// ------------------------------------------------------------------------------ //
+// FONTS
+// ------------------------------------------------------------------------------ //
+
+$o-theme-font-configs: (
+    'Space Grotesk': (
+        'family':                           ('Space Grotesk', sans-serif),
+        'url':                              'Space+Grotesk:400,500,700',
+        'properties' : (
+            'base': (
+                'font-size-base':           1rem,
+            ),
+        ),
+    ),
+    'Lato': (
+        'family':                           ('Lato', sans-serif),
+        'url':                              'Lato:300,400,700',
+        'properties' : (
+            'base': (
+                'font-size-base':           1rem,
+            ),
+        ),
+    ),
+);
+
+// ------------------------------------------------------------------------------ //
+// COLORS
+// ------------------------------------------------------------------------------ //
+
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'airproof': (
+            'o-color-1':                    #000000,
+            'o-color-2':                    #BBE1FA,
+            'o-color-3':                    #CEF8A1,
+            'o-color-4':                    #FFFFFF,
+            'o-color-5':                    #8F8F8F,
+
+            'menu':                         1,
+            'footer':                       4,
+            'copyright':                    5,
+
+            'o-cc1-btn-primary':            'o-color-3',
+        ),
+    )
+);
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'airproof');
+
+// ------------------------------------------------------------------------------ //
+// SHAPES
+// ------------------------------------------------------------------------------ //
+
+$o-bg-shapes: map-merge($o-bg-shapes,
+    (
+        'illustration': map-merge(
+            map-get($o-bg-shapes, 'illustration') or (),
+            (
+                'airproof/waves': ('position': left bottom, 'size': 90% auto, 'colors': (2), 'repeat-y': false),
+                'airproof/waves2': ('position': right bottom, 'size': auto 90%, 'colors': (2), 'repeat-y': false),
+                'airproof/waves3': ('position': center center, 'size': 100% auto, 'colors': (2), 'repeat-y': false),
+                'airproof/texture': ('position': left bottom, 'size': 100% auto, 'colors': (2), 'repeat-y': false),
+            ),
+        ),
+    )
+);

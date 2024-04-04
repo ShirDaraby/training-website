@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Delete Default "Home" item -->
+    <delete model="website.menu" search="[('url','in', ['/', '/']), ('website_id', '=', 1)]"/>
+
+    <!-- Delete Default "Contact us" item -->
+    <delete model="website.menu" search="[('url','in', ['/', '/contactus']), ('website_id', '=', 1)]"/>
+
+    <!-- Delete Default "Blog" item -->
+    <delete model="website.menu" search="[('url','in', ['/', '/blog']), ('website_id', '=', 1)]"/>
+
+    <!-- Delete Default "E-commerce" item -->
+    <delete model="website.menu" search="[('url','in', ['/', '/shop']), ('website_id', '=', 1)]"/>
+
+    <!-- RESSOURCES -->
+    <record id="menu_drones" model="website.menu">
+        <field name="is_mega_menu">true</field>
+        <field name="name">Waterproof drones</field>
+        <field name="url">/shop</field>
+        <field name="parent_id" search="[
+            ('url', '=', '/default-main-menu'),
+            ('website_id', '=', 1)]"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">1</field>
+        <field name="mega_menu_content" type="html">
+            <section class="py-4 o_cc1 o_cc5 menu-drones" style="background-color: #F4F4F4 !important;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-sm text-center py-2 o_colored_level">
+                            <a href="/shop/airproof-mini-1" class="nav-link p-0" data-name="Menu Item">
+                                <img src="/web/image/website_airproof_ecommerce.img_mini" alt="Drone Airproof Mini" class="img-fluid img" data-mimetype="image/png" data-resize-width="200" />
+                                <br/>
+                                <span class="d-block p-2">
+                                    <font class="fw-bold" style="font-size:14px;">Airproof Mini</font>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm text-center py-2 o_colored_level">
+                            <a href="/shop/airproof-pro-2" class="nav-link p-0" data-name="Menu Item">
+                                <img src="/web/image/website_airproof_ecommerce.img_pro" alt="Drone Airproof Pro" class="img-fluid img" data-mimetype="image/png" data-resize-width="200" />
+                                <br/>
+                                <span class="d-block p-2">
+                                    <font class="fw-bold" style="font-size:14px;">Airproof Pro</font>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm text-center py-2 o_colored_level">
+                            <a href="/shop/airproof-robin-3" class="nav-link p-0" data-name="Menu Item">
+                                <img src="/web/image/website_airproof_ecommerce.img_robin" alt="Drone Airproof Robin" class="img-fluid img" data-mimetype="image/png" data-resize-width="200" />
+                                <br/>
+                                <span class="d-block p-2">
+                                    <font class="fw-bold" style="font-size:14px;">Airproof Robin</font>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm text-center py-2 o_colored_level">
+                            <a href="/shop/airproof-falcon-4" class="nav-link p-0" data-name="Menu Item">
+                                <img src="/web/image/website_airproof_ecommerce.img_falcon" alt="Drone Airproof Falcon" class="img-fluid img" data-mimetype="image/png" data-resize-width="200" />
+                                <br/>
+                                <span class="d-block p-2">
+                                    <font class="fw-bold" style="font-size:14px;">Airproof Falcon</font>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm text-center py-2 o_colored_level">
+                            <a href="/shop/airproof-eagle-5" class="nav-link p-0" data-name="Menu Item">
+                                <img src="/web/image/website_airproof_ecommerce.img_eagle" alt="Drone Airproof Eagle" class="img-fluid img" data-mimetype="image/png" data-resize-width="200" />
+                                <br/>
+                                <span class="d-block p-2">
+                                    <font class="fw-bold" style="font-size:14px;">Airproof Eagle</font>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </field>
+    </record>
+
+
+    <record id="menu_about" model="website.menu">
+        <field name="name">About us</field>
+        <field name="url">/about-us</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" search="[
+            ('url', '=', '/default-main-menu'),
+            ('website_id', '=', 1)]"/>
+        <field name="sequence" type="int">20</field>
+    </record>
+
+    <!-- Blog inner pages -->
+    <record id="menu_blog" model="website.menu">
+        <field name="name">Blog</field>
+        <field name="parent_id" search="[
+            ('url', '=', '/default-main-menu'),
+            ('website_id', '=', 1)]"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">30</field>
+    </record>
+    <record id="menu_blog_item_1" model="website.menu">
+        <field name="name">Our latest news</field>
+        <field name="url">/blog</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_airproof_ecommerce.menu_blog"/>
+        <field name="sequence" type="int">1</field>
+    </record>
+    <record id="menu_blog_item_2" model="website.menu">
+        <field name="name">Tutorials</field>
+        <field name="url">/</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_airproof_ecommerce.menu_blog"/>
+        <field name="sequence" type="int">2</field>
+    </record>
+    <record id="menu_blog_item_3" model="website.menu">
+        <field name="name">Videos</field>
+        <field name="url">/</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_airproof_ecommerce.menu_blog"/>
+        <field name="sequence" type="int">3</field>
+    </record>
+
+    <record id="menu_contact" model="website.menu">
+        <field name="name">Contact us</field>
+        <field name="url">/contactus</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" search="[
+            ('url', '=', '/default-main-menu'),
+            ('website_id', '=', 1)]"/>
+        <field name="sequence" type="int">50</field>
+    </record>
+
+</odoo>

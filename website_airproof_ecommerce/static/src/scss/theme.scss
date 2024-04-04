@@ -1,0 +1,52 @@
+#wrapwrap {
+  .x_btn_outlined {
+    background-color: o-color('o-color-4');
+    &:hover {
+      background-color: o-color('o-color-2') !important;
+      filter: none;
+    }
+  }
+
+  .s_map_embedded, .s_website_form_end_message .s_text_block, .img-rounded, .o_record_cover_component {
+    border-radius: 20px;
+  }
+
+  // Media queries ------------------------------------------------------------------------
+  @include media-breakpoint-down(md) {
+    .dropdown-menu {
+      border: none !important;
+      text-align: center !important;
+    }
+
+    .carousel-indicators li {
+      background-color: o-color('o-color-1');
+      &.active {
+          background-color: o-color('o-color-3');
+      }
+    }
+    
+    .carousel-item .row {
+      justify-content: center;
+    }
+    .carousel-item .row .col-3 {
+      min-width: 40%;
+    }
+
+    .s_dynamic_snippet_products {
+      .carousel-control-next:after {
+        left: 0px;
+      }
+      .carousel-control-prev:after {
+        right: 0px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .x_sticker {
+      @include o-position-absolute($top: -50px, $right: 0);
+      width: 200px;
+      height: auto;
+    }
+  }
+}

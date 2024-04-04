@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Language selector : change the design -->
+<template inherit_id="portal.language_selector" id="language_selector" name="Language selector">
+    <xpath expr="//button" position="replace" >
+            <button t-attf-class="btn btn-sm dropdown-toggle #{_btn_class}" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span t-if="not no_text"
+                        class="align-middle"
+                        t-esc="active_lang[2].split('/').pop()[0:2]"/>
+            </button>
+    </xpath>
+</template>
+
+</odoo>

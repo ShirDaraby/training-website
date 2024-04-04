@@ -3,7 +3,7 @@
     <template id="copyright" inherit_id="website.layout" name="Test copyright">
         <xpath expr="//div[hasclass('o_footer_copyright')]" position="after">
             <div class="o_footer_copyright" data-name="Copyright">
-                <!-- Content --> <span class="o_footer_copyright_name me-2">Copyright &amp;copy; Airproof try</span>
+                <!-- Content -->
             </div>
         </xpath>
     </template>
@@ -61,7 +61,7 @@
                                     <t t-set="_link_class" t-valuef="nav-link"/>
                                     <t t-set="_user_name" t-value="true"/>
                                     <t t-set="link_name">John Woo</t>
-                                    <t t-set="_icon" t-value="True"/>
+                                    <t t-set="_link_class" t-valuef="btn btn-outline-secondary d-flex align-items-center h-100 border-0"/>
                                 </t>
 
                                 <!-- Sign In

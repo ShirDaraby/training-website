@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <!-- We want to activate product variant by default for easier demoing. -->
+    <record id="base.group_user" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('product.group_product_variant'))]"/>
+    </record>
+
+    <!-- Categories -->
+
+    <record id="public_category_airproof_drones" model="product.public.category">
+        <field name="name">Drones</field>
+    </record>
+
+    <record id="public_category_airproof_accesories" model="product.public.category">
+        <field name="name">Accesories</field>
+    </record>
+
+    <record id="public_category_airproof_warranties" model="product.public.category">
+        <field name="name">Warranties</field>
+    </record>
+
+    <!-- Variants -->
+
+    <!-- Weight -->
+    <record id="product_attribute_1" model="product.attribute">
+        <field name="name">Weight</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="product_attribute_value_1" model="product.attribute.value">
+        <field name="name">200 g</field>
+        <field name="attribute_id" ref="product_attribute_1"/>
+        <field name="sequence">1</field>
+    </record>
+    <record id="product_attribute_value_2" model="product.attribute.value">
+        <field name="name">400 g</field>
+        <field name="attribute_id" ref="product_attribute_1"/>
+        <field name="sequence">2</field>
+    </record>
+    <!-- Max Speed -->
+    <record id="product_attribute_2" model="product.attribute">
+        <field name="name">Max Speed</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="product_attribute_value_3" model="product.attribute.value">
+        <field name="name">57.6 kph</field>
+        <field name="attribute_id" ref="product_attribute_2"/>
+        <field name="sequence">1</field>
+    </record>
+    <record id="product_attribute_value_4" model="product.attribute.value">
+        <field name="name">60.4 kph</field>
+        <field name="attribute_id" ref="product_attribute_2"/>
+        <field name="sequence">2</field>
+    </record>
+    <record id="product_attribute_value_5" model="product.attribute.value">
+        <field name="name">62.0 kph</field>
+        <field name="attribute_id" ref="product_attribute_2"/>
+        <field name="sequence">3</field>
+    </record>
+    <!-- Video Transmission System -->
+    <record id="product_attribute_3" model="product.attribute">
+        <field name="name">Video Transmission System</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="product_attribute_value_6" model="product.attribute.value">
+        <field name="name">Wi-Fi</field>
+        <field name="attribute_id" ref="product_attribute_3"/>
+        <field name="sequence">1</field>
+    </record>
+    <record id="product_attribute_value_7" model="product.attribute.value">
+        <field name="name">Unknown</field>
+        <field name="attribute_id" ref="product_attribute_3"/>
+        <field name="sequence">2</field>
+    </record>
+
+    <!-- Airproof Mini product /////////////////////////////////////////////////// -->
+    <record id="product_airproof_mini" model="product.template">
+        <field name="name">Airproof Mini</field>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product.product_category_all"/>
+        <field name="public_categ_ids" eval="[(6,0,[ref('public_category_airproof_drones')])]"/>
+        <field name="list_price">150.00</field>
+        <field name="image_1920" type="base64" file="website_airproof/static/src/img/photos/airproof-mini.png"/>
+        <field name="description_sale">This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</field>
+        <field name="website_description" type="html">
+            <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text Block">
+                <div class="container s_allow_columns">
+                    <h6>About this drone</h6>
+                    <p>This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</p>
+                </div>
+            </section>
+        </field>
+    </record>
+
+    <!-- its attributes -->
+    <record id="product_airproof_mini_attribute_1_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_mini"/>
+        <field name="attribute_id" ref="product_attribute_1"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_1')])]"/>
+    </record>
+    <record id="product_airproof_mini_attribute_2_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_mini"/>
+        <field name="attribute_id" ref="product_attribute_2"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_5')])]"/>
+    </record>
+    <record id="product_airproof_mini_attribute_3_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_mini"/>
+        <field name="attribute_id" ref="product_attribute_3"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_7')])]"/>
+    </record>
+
+    <!-- Airproof Pro product /////////////////////////////////////////////////// -->
+    <record id="product_airproof_pro" model="product.template">
+        <field name="name">Airproof Pro</field>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product.product_category_all"/>
+        <field name="public_categ_ids" eval="[(6,0,[ref('public_category_airproof_drones')])]"/>
+        <field name="list_price">200.00</field>
+        <field name="image_1920" type="base64" file="website_airproof/static/src/img/photos/airproof-pro.png"/>
+        <field name="description_sale">This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</field>
+        <field name="website_description" type="html">
+            <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text Block">
+                <div class="container s_allow_columns">
+                    <h6>About this drone</h6>
+                    <p>This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</p>
+                </div>
+            </section>
+        </field>
+    </record>
+
+    <!-- its attributes -->
+    <record id="product_airproof_pro_attribute_1_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_pro"/>
+        <field name="attribute_id" ref="product_attribute_1"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_2')])]"/>
+    </record>
+    <record id="product_airproof_pro_attribute_2_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_pro"/>
+        <field name="attribute_id" ref="product_attribute_2"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_3')])]"/>
+    </record>
+    <record id="product_airproof_pro_attribute_3_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_pro"/>
+        <field name="attribute_id" ref="product_attribute_3"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_6')])]"/>
+    </record>
+
+    <!-- Airproof Robin product /////////////////////////////////////////////////// -->
+    <record id="product_airproof_robin" model="product.template">
+        <field name="name">Airproof Robin</field>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product.product_category_all"/>
+        <!-- <field name="alternative_product_ids" eval="[(6, 0, [ref('product_airproof_eagle'), ref('product_airproof_falcon')])]"/> -->
+        <field name="public_categ_ids" eval="[(6,0,[ref('public_category_airproof_drones')])]"/>
+        <field name="list_price">250.00</field>
+        <field name="image_1920" type="base64" file="website_airproof/static/src/img/photos/airproof-robin.png"/>
+        <field name="description_sale">This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</field>
+        <field name="website_description" type="html">
+            <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text Block">
+                <div class="container s_allow_columns">
+                    <h6>About this drone</h6>
+                    <p>This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</p>
+                </div>
+            </section>
+        </field>
+    </record>
+
+    <!-- its attributes -->
+    <record id="product_airproof_robin_attribute_1_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_robin"/>
+        <field name="attribute_id" ref="product_attribute_1"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_1')])]"/>
+    </record>
+    <record id="product_airproof_robin_attribute_2_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_robin"/>
+        <field name="attribute_id" ref="product_attribute_2"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_5')])]"/>
+    </record>
+    <record id="product_airproof_robin_attribute_3_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_robin"/>
+        <field name="attribute_id" ref="product_attribute_3"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_7')])]"/>
+    </record>
+
+    <!-- Airproof Falcon product /////////////////////////////////////////////////// -->
+    <record id="product_airproof_falcon" model="product.template">
+        <field name="name">Airproof Falcon</field>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product.product_category_all"/>
+        <field name="public_categ_ids" eval="[(6,0,[ref('public_category_airproof_drones')])]"/>
+        <field name="list_price">300.00</field>
+        <field name="image_1920" type="base64" file="website_airproof/static/src/img/photos/airproof-falcon.png"/>
+        <field name="description_sale">This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</field>
+        <field name="website_description" type="html">
+            <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text Block">
+                <div class="container s_allow_columns">
+                    <h6>About this drone</h6>
+                    <p>This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</p>
+                </div>
+            </section>
+        </field>
+    </record>
+
+    <!-- its attributes -->
+    <record id="product_airproof_falcon_attribute_1_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_falcon"/>
+        <field name="attribute_id" ref="product_attribute_1"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_1')])]"/>
+    </record>
+    <record id="product_airproof_falcon_attribute_2_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_falcon"/>
+        <field name="attribute_id" ref="product_attribute_2"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_5')])]"/>
+    </record>
+
+    <!-- Airproof Eagle product /////////////////////////////////////////////////// -->
+    <record id="product_airproof_eagle" model="product.template">
+        <field name="name">Airproof Eagle</field>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product.product_category_all"/>
+        <field name="public_categ_ids" eval="[(6,0,[ref('public_category_airproof_drones')])]"/>
+        <field name="list_price">320.00</field>
+        <field name="image_1920" type="base64" file="website_airproof/static/src/img/photos/airproof-eagle.png"/>
+        <field name="description_sale">This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</field>
+        <field name="website_description" type="html">
+            <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text Block">
+                <div class="container s_allow_columns">
+                    <h6>About this drone</h6>
+                    <p>This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.</p>
+                </div>
+            </section>
+        </field>    
+    </record>
+
+    <!-- its attributes -->
+    <record id="product_airproof_eagle_attribute_1_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_eagle"/>
+        <field name="attribute_id" ref="product_attribute_1"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_2')])]"/>
+    </record>
+    <record id="product_airproof_eagle_attribute_2_product_template_attribute_line" model="product.template.attribute.line">
+        <field name="product_tmpl_id" ref="product_airproof_eagle"/>
+        <field name="attribute_id" ref="product_attribute_2"/>
+        <field name="value_ids" eval="[(6, 0, [ref('product_attribute_value_4')])]"/>
+    </record>
+
+
+    <!-- Alt products -->
+    <record id="product_airproof_robin" model="product.template">
+        <field name="alternative_product_ids" eval="[(6, 0, [ref('product_airproof_eagle'), ref('product_airproof_falcon')])]"/>
+    </record>
+
+    <record id="product_airproof_mini" model="product.template">
+        <field name="alternative_product_ids" eval="[(6, 0, [ref('product_airproof_eagle'), ref('product_airproof_falcon')])]"/>
+    </record>
+
+    <record id="product_airproof_eagle" model="product.template">
+        <field name="alternative_product_ids" eval="[(6, 0, [ref('product_airproof_robin'), ref('product_airproof_falcon')])]"/>
+    </record>
+
+    <!-- A warranty /////////////////////////////////////////////////// -->
+    <record id="product_warranty" model="product.template">
+        <field name="name">Warranty</field>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product.product_category_all"/>
+        <field name="public_categ_ids" eval="[(6,0,[ref('public_category_airproof_warranties')])]"/>
+        <field name="list_price">100.00</field>
+        <field name="image_1920" type="base64" file="website_airproof/static/src/img/photos/warranty.png"/>
+        <field name="description_sale">Warranty, issued to the purchaser of an article by its manufacturer, promising to repair or replace it if necessary within a specified period of time.</field>
+        <field name="website_description" type="html">
+            <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text Block">
+                <div class="container s_allow_columns">
+                    <p>Warranty, issued to the purchaser of an article by its manufacturer, promising to repair or replace it if necessary within a specified period of time.</p>
+                </div>
+            </section>
+        </field>    
+    </record>
+
+    <record id="product_warranty_2" model="product.template">
+        <field name="name">2-year warranty</field>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product.product_category_all"/>
+        <field name="public_categ_ids" eval="[(6,0,[ref('public_category_airproof_warranties')])]"/>
+        <field name="list_price">148.00</field>
+        <field name="image_1920" type="base64" file="website_airproof/static/src/img/photos/warranty.png"/>
+        <field name="description_sale">Warranty, issued to the purchaser of an article by its manufacturer, promising to repair or replace it if necessary within a specified period of time.</field>
+        <field name="website_description" type="html">
+            <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text Block">
+                <div class="container s_allow_columns">
+                    <p>Warranty, issued to the purchaser of an article by its manufacturer, promising to repair or replace it if necessary within a specified period of time.</p>
+                </div>
+            </section>
+        </field>    
+    </record>
+
+    <!-- An accessory /////////////////////////////////////////////////// -->
+    <record id="product_accessory" model="product.template">
+        <field name="name">DJI 65W Car Charger</field>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product.product_category_all"/>
+        <field name="public_categ_ids" eval="[(6,0,[ref('public_category_airproof_accesories')])]"/>
+        <field name="list_price">85.00</field>
+        <field name="image_1920" type="base64" file="website_airproof/static/src/img/photos/accessory.png"/>
+        <field name="description_sale">A must-have on the go, the 65W Car Charger can charge different devices in the car. Universal ports, easy to use.</field>
+        <field name="website_description" type="html">
+            <section class="s_text_block pt40 pb40" data-snippet="s_text_block" data-name="Text Block">
+                <div class="container s_allow_columns">
+                    <p>A must-have on the go, the 65W Car Charger can charge different devices in the car. It provides a stable output power of 65 W and two output ports (USB-C and USB-A) for charging the Intelligent Flight Battery and a remote controller at the same time. It also supports PPS and PD protocols to charge your smartphone, laptop, and other devices.</p>
+                </div>
+            </section>
+        </field>    
+    </record>
+
+</odoo>

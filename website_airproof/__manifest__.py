@@ -6,6 +6,7 @@
    'license': 'LGPL-3',
    'data': [
       # 'data/ir_asset.xml',
+      'data/data.xml',
       'data/menu.xml',
       'data/presets.xml',
       'data/images.xml',

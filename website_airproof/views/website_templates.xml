@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="copyright" inherit_id="website.layout" name="Test copyright">
-        <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="after">
             <div class="o_footer_copyright" data-name="Copyright">
-                <!-- Content -->
+                <!-- Content --> <span class="o_footer_copyright_name me-2">Copyright &amp;copy; Airproof try</span>
             </div>
         </xpath>
     </template>

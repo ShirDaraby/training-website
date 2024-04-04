@@ -2,7 +2,8 @@
    'name': 'Airproof Theme',
    'description': 'Airproof Theme',
    'category': 'Theme/Hidden',
-   'depends': ['website'],
+   'depends': ['website', 'website_sale'],
+   'license': 'LGPL-3',
    'data': [
       # 'data/ir_asset.xml',
       'data/menu.xml',

@@ -10,7 +10,13 @@
       'data/menu.xml',
       'data/presets.xml',
       'data/images.xml',
+      'data/shapes.xml',
       'views/website_templates.xml', 
+      # Pages
+      'data/pages/home.xml',
+      # 'data/pages/about.xml',
+      # 'data/pages/contact.xml',
+      # 'data/pages/404.xml',
    ],
     'assets': {
     'web._assets_primary_variables': [
@@ -18,6 +24,7 @@
       'website_airproof/static/src/scss/fonts.scss',
       'website_airproof/static/src/scss/bootstrap_overridden.scss',
       'website_airproof/static/src/scss/theme.scss',
+      'website_airproof/static/src/scss/homepage.scss',
       # 'website_airproof/static/src/scss/theme.scss',
    ],
 },

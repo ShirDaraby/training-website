@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Bg shapes -->
+    <record id="shape_waves" model="ir.attachment">
+        <field name="name">waves.svg</field>
+        <field name="datas" type="base64" file="website_airproof/static/shapes/airproof/waves.svg"/>
+        <field name="url">/web_editor/shape/illustration/airproof/waves.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="shape_waves2" model="ir.attachment">
+        <field name="name">waves2.svg</field>
+        <field name="datas" type="base64" file="website_airproof/static/shapes/airproof/waves2.svg"/>
+        <field name="url">/web_editor/shape/illustration/airproof/waves2.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="shape_waves3" model="ir.attachment">
+        <field name="name">waves3.svg</field>
+        <field name="datas" type="base64" file="website_airproof/static/shapes/airproof/waves3.svg"/>
+        <field name="url">/web_editor/shape/illustration/airproof/waves3.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+
+     <record id="shape_texture" model="ir.attachment">
+        <field name="name">texture.svg</field>
+        <field name="datas" type="base64" file="website_airproof/static/shapes/airproof/texture.svg"/>
+        <field name="url">/web_editor/shape/illustration/airproof/texture.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+    
+</odoo>

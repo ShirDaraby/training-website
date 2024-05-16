@@ -101,3 +101,21 @@ $o-selected-color-palettes-names: append(
   $o-selected-color-palettes-names,
   "airproof"
 );
+
+// ------------------------------------------------------------------------------ //
+// SHAPES
+// ------------------------------------------------------------------------------ //
+
+$o-bg-shapes: map-merge($o-bg-shapes,
+    (
+        'illustration': map-merge(
+            map-get($o-bg-shapes, 'illustration') or (),
+            (
+                'airproof/waves': ('position': left bottom, 'size': 90% auto, 'colors': (3), 'repeat-y': false),
+                'airproof/waves2': ('position': right bottom, 'size': auto 90%, 'colors': (3), 'repeat-y': false),
+                'airproof/waves3': ('position': center center, 'size': 100% auto, 'colors': (3), 'repeat-y': false),
+                'airproof/texture': ('position': left bottom, 'size': 100% auto, 'colors': (3), 'repeat-y': false),
+            ),
+        ),
+    )
+);

@@ -12,6 +12,9 @@
       'data/images.xml',
       'data/shapes.xml',
       'views/website_templates.xml', 
+      # Snippets
+      'views/snippets/options.xml',
+      'views/snippets/s_airproof_newsletter.xml',
       # Pages
       'data/pages/home.xml',
       # 'data/pages/about.xml',
@@ -25,7 +28,7 @@
       'website_airproof/static/src/scss/bootstrap_overridden.scss',
       'website_airproof/static/src/scss/theme.scss',
       'website_airproof/static/src/scss/homepage.scss',
-      # 'website_airproof/static/src/scss/theme.scss',
+      'website_airproof/static/src/snippets/s_airproof_newsletter/000.scss',
    ],
 },
 }

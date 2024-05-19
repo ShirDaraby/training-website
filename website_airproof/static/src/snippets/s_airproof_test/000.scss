@@ -1,0 +1,21 @@
+$grid-gutter-width2:           24px !default;
+
+$font-size-base2: 16rem !default;
+$font-size-sm2: $font-size-base2 * .875 !default;
+$font-size-lg2: $font-size-base2 * 1.25 !default;
+
+#wrapwrap {
+  .s_alert_sm {
+      padding: $grid-gutter-width2/3;
+      font-size: $font-size-sm2;
+  }
+  .s_alert_md {
+      padding: $grid-gutter-width2/2;
+      font-size: $font-size-base2;
+  }
+  .s_alert_lg {
+      padding: $grid-gutter-width2;
+      font-size: $font-size-lg2;
+  }
+}
+  

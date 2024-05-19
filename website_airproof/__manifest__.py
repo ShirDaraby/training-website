@@ -29,6 +29,7 @@
       'website_airproof/static/src/scss/theme.scss',
       'website_airproof/static/src/scss/homepage.scss',
       'website_airproof/static/src/snippets/s_airproof_newsletter/000.scss',
+      'website_airproof/static/src/snippets/s_airproof_test/000.scss',
    ],
 },
 }

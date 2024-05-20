@@ -81,16 +81,16 @@ $o-theme-font-configs: (
 
 
 
-
+// right colors: 01#000000 o3#CEF8A1 o4#ffffff
 $o-color-palettes: map-merge(
   $o-color-palettes,
   (
     "airproof": (
-      "o-color-1": #CEF8A1,
+      "o-color-1": #000000,
       "o-color-2": #BBE1FA,
-      "o-color-3": #8F8F8F,
+      "o-color-3": #CEF8A1,
       "o-color-4": #ffffff,
-      "o-color-5": #000000,
+      "o-color-5": #8F8F8F,
       'o-cc1-bg':  #ffffff,
       'o-cc5-bg':  'o-color-5',
     ),

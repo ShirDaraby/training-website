@@ -55,14 +55,14 @@ for professional pilots.</p>
 
                                                 <div class="carousel-content o_colored_level col-lg-6 position-relative">
                                                     <div class="position-absolute z-index-1 col-6 col-md-4" style="bottom: 0; right: 0;">
-                                                        <div class="x_bubble x_bubble1 bg-white mb-3" style="border-radius: 20px, 20px, 20px, 0px; border: 2px solid #BBE1FA; box-shadow: 10px 10px #BBE1FA">
+                                                        <div class="x_bubble x_bubble1 bg-white mb-3" style="border-radius: 20px, 20px, 20px, 0px; border: 3px solid #BBE1FA; box-shadow: 0px 4px 60px #BBE1FA">
                                                             <p class="pb8 m-0">
                                                                 <strong>Best drone !@#$$$ of the year</strong>
                                                             </p>
                                                             <p class="m-0" style="font-size: 12px;">GQ France</p>
 
                                                         </div>
-                                                        <div class="x_bubble x_bubble2 bg-white">
+                                                        <div class="x_bubble x_bubble2 bg-white" style="border-radius: 20px, 20px, 20px, 0px; border: 3px solid #CEF8A1; box-shadow: 0px 4px 60px #CEF8A1">
                                                             <div class="s_rating_icons o_not_editable pb8">
                                                                 <span class="s_rating_active_icons">
                                                                     <i class="fa fa-star"/>
@@ -111,15 +111,24 @@ for professional pilots.</p>
 
                                 <div class="row">
 
-                                    <div class=" o_colored_level o_cc o_cc1 col-lg-12 pt-0 pl-0 pr-0 pb-4 x_group1">
+                                    <div class="o_colored_level o_cc o_cc1 col-lg-12 pt-0 pl-0 pr-0 pb-4 x_group1">
                                         <div class="oe_img_bg o_bg_img_center p-5 rounded-top x_group_child d-flex flex-row align-items-start text-left" style="background-image: url(&quot;/web/image/website_airproof.img_drone_robin&quot;);" data-mimetype="image/png">
                                             <div>
                                                 <h2 class="text-white">Airproof Robin
                                                 </h2>
-                                                <h4 class="text-o-color-3 pb-4">The dream drone is here</h4>
-                                                <p>
-                                                    <a href="/shop/airproof-robin-3" class="btn btn-secondary text-o-color-1 bg-o-color-4">Discover more</a>
-                                                </p>
+                                                <h3 class="text-o-color-3 pb-4">The dream drone is here ...</h3>
+                                                <div class="row">
+                                                    <div class="btn btn-right-edges text-o-color-41 bg-o-color-4 d-flex flex-column">
+                                                        <p>
+                                                            <a href="/shop/airproof-robin-3">Discover more ...</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="btn btn-right-edges text-o-color-1 bg-o-color-3 d-flex flex-column">
+                                                        <span>
+                                                            <i class="fa fa-star"/> <a href="/shop/airproof-robin-3">Add to cart</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -137,7 +146,7 @@ for professional pilots.</p>
                                         </div>
                                     </div>
 
-                                    <div class=" o_colored_level o_cc o_cc4 col-lg-6 p-0 x_group3" style="background-color: inherit;">
+                                    <div class=" o_colored_level o_cc o_cc5 col-lg-6 p-0 x_group3" style="background-color: inherit;">
                                         <div class="oe_img_bg o_bg_img_center p-5 d-flex flex-column justify-content-end x_group_child text-left" style="background-image: url(&quot;/web/image/website_airproof.img_school&quot;);" data-mimetype="image/png">
                                             <h2>Airproof school</h2>
                                             <h4 class="text-o-color-3 pb-4">Become an expert pilot

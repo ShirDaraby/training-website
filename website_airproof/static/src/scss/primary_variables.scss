@@ -93,6 +93,11 @@ $o-color-palettes: map-merge(
       "o-color-5": #8F8F8F,
       'o-cc1-bg':  #ffffff,
       'o-cc5-bg':  'o-color-5',
+
+      // You can change the header and footer colour palettes directly here.
+      //'menu':                         1,
+      //'footer':                       4,
+      //'copyright':                    5,
     ),
   )
 );

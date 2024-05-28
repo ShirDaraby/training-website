@@ -1,3 +1,4 @@
+//you could add this file directly in the SCSS folder with the rest of the CSS
 .input-group-btn {
   width: 50px;
   .btn {
@@ -8,6 +9,8 @@
       width: 50px;
   }
 
+  //we usually try to prefix our custom classes with "x_" for example. This is to distinguish them from other classes.
+  //I wouldn't add a fixed with or height on button as they will change depending on their content and padding.
   .btn-right-edges {
     border-radius: 20px 0px 0px 20px;
     height: 50px;

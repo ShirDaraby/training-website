@@ -46,6 +46,7 @@
                                                     We create custom waterproof drones <br/>
 for professional pilots.</p>
                                                     <p>
+                                                        <!-- If you have a custom class for your outline buttons, you should not need the inline css. You can also use the default BS class like "btn-outline-primary" -->
                                                         <a href="/shop" class="mb-2 btn btn-custom x_btn_shape text-o-color-1 bg-o-color-4 btn-lg x_btn_outlined" style="border-width: 2px; border-style: solid; border-color: rgb(0, 0, 0);">​​
                                                         Discover our drones
                                                             <img src="/web/image/website_airproof.img_arrow" alt="Arrow icon" class="img img-fluid ml-2" />
@@ -111,6 +112,8 @@ for professional pilots.</p>
 
                                 <div class="row">
 
+                                    <!-- You have padding issues because the BS classes have changed and therfore are not applied. -->
+                                    <!-- "pl-0" should be "ps-0" for "padding start". "pl-0" should be "pe-0" for "padding end" -->
                                     <div class="o_colored_level o_cc o_cc1 col-lg-12 pt-0 pl-0 pr-0 pb-4 x_group1">
                                         <div class="oe_img_bg o_bg_img_center p-5 rounded-top x_group_child d-flex flex-row align-items-start text-left" style="background-image: url(&quot;/web/image/website_airproof.img_drone_robin&quot;);" data-mimetype="image/png">
                                             <div>
@@ -118,6 +121,8 @@ for professional pilots.</p>
                                                 </h2>
                                                 <h3 class="text-o-color-3 pb-4">The dream drone is here ...</h3>
                                                 <div class="row">
+                                                    <!-- You don't have any columns in your row. You can use the "col-6" on a two different div and add our CTA inside them. -->
+                                                    <!-- Otherwise, you could just add two buttons ".btn" in a paragraph tag, and they will be displayed as "inline-block", next to each other. -->
                                                     <div class="btn btn-right-edges text-o-color-41 bg-o-color-4 d-flex flex-column">
                                                         <p>
                                                             <a href="/shop/airproof-robin-3">Discover more ...</a>
@@ -149,10 +154,12 @@ for professional pilots.</p>
                                     <div class=" o_colored_level o_cc o_cc5 col-lg-6 p-0 x_group3" style="background-color: inherit;">
                                         <div class="oe_img_bg o_bg_img_center p-5 d-flex flex-column justify-content-end x_group_child text-left" style="background-image: url(&quot;/web/image/website_airproof.img_school&quot;);" data-mimetype="image/png">
                                             <h2>Airproof school</h2>
+                                            <!-- Following a "h2", you should have a "h3". Keeping a good heading hierarchy is good for SEO -->
                                             <h4 class="text-o-color-3 pb-4">Become an expert pilot
                                             </h4>
                                             <p>
                                                 <a href="/" target="_blank">
+                                                    <!-- You could add a bit of left margin on you icon to have some breathing space between the the text and the icon -->
                                                     <font class="text-o-color-4">Discover more<img src="/web/image/website_airproof.img_arrow_white" alt="Arrow icon" class="img img-fluid ml-2" />
                                                     </font>
                                                 </a>
@@ -165,6 +172,7 @@ for professional pilots.</p>
                         </section>
 
                         <!-- Best drone title + 4 columns -->
+                        <!-- I can't seem to be able to change the background shapes colours on my end; Do you have the same issue ? -->
                         <section class="s_text_block o_colored_level o_cc o_cc3 pt64 pb32" data-snippet="s_text_block" data-name="Text" style="background-image: linear-gradient(rgb(187, 225, 250) 10%, rgb(11, 143, 229) 85%);" data-oe-shape-data="{'shape':'illustration/airproof/waves2','colors':{'c1':'#BBE1FA'},'flip':[]}">
                             <div class="o_we_shape o_illustration_airproof_waves2" style="background-image: url(/web_editor/shape/illustration/airproof/waves2.svg?c1=%23BBE1FA);"/>
 

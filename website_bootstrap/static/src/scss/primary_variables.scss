@@ -1,0 +1,101 @@
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+  (
+    "color-palettes-name": "bootstrap",
+    // fonts size
+    'small-font-size': 0.625rem,
+    'font-size-base': 0.875rem,
+    'h1-font-size': 5rem,
+    'h2-font-size': 3.125rem,
+    //fonts
+    "font": "Montserrat",
+    'headings-font': 'Montserrat',
+    "navbar-font": "Montserrat:400",
+    "h2-font": "Montserrat",
+    "h5-font": "Montserrat",
+    "buttons-font": "Montserrat",
+    // buttons
+    "btn-padding-y": 0.75rem,
+    "btn-font-size": 1.25rem,
+    "btn-secondary-outline": True,
+    // body-image is not necessary: you need to define a custom background shape
+    'body-image': '/website_airproof/static/src/img/background-lines.svg',
+    'body-image-type': 'image' or 'pattern',
+    'header-template': 'airproof',
+    'footer-template': 'airproof',
+  ),
+);
+
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+
+  "Montserrat": (
+        'family': ("Montserrat", sans-serif),
+        'url': 'Montserrat:400,700,800',
+  ),
+
+//   "Montserrat": (
+//     'family': ("Montserrat", sans-serif),
+//     'url': 'Montserrat:400,700',
+//     "properties": (
+//       'base': (
+//         // "font-size: 2.5rem;"
+//         // "font-size": 80px,
+//         // 'header-font-size':         (15 / 80) * 5rem,
+//         // 'font-size-base':           (15 / 80) * 5rem,
+//       //  'font-size-base':            5rem,
+//         // "line-height": 5rem,
+//       ),
+//     )
+//    ),
+);
+
+
+$o-color-palettes: map-merge(
+    $o-color-palettes,
+   (
+      'bootstrap': (
+         'o-color-1':                    #d3104d,
+         'o-color-2':                    #4b5563,
+         'o-color-3':                    #f2f2f2,
+         'o-color-4':                    #ffffff,
+         'o-color-5':                    #000000,
+      ),
+   )
+);
+
+
+$o-color-palettes: map-merge(
+    $o-color-palettes,
+   (
+      'bootstrap': (
+        //  'o-cc*-bg':                     'o-color-3',
+        //  'o-cc*-text':                   'o-color-2',
+        //  'o-cc*-headings':               'o-color-2',
+        //  'o-cc*-h2':                     'o-color-2',
+        //  'o-cc*-h3':                     'o-color-2',
+        //  'o-cc*-h4':                     'o-color-2',
+        //  'o-cc*-h5':                     'o-color-2',
+        //  'o-cc*-h6':                     'o-color-2',
+        //  'o-cc*-link':                   'o-color-1',
+        //  'o-cc*-btn-primary':            'o-color-1',
+        //  'o-cc*-btn-primary-border':     'o-color-1',
+        //  'o-cc*-btn-secondary':          'o-color-5',
+        //  'o-cc*-btn-secondary-border':   'o-color-5',
+
+      ),
+   )
+);
+
+
+$o-selected-color-palettes-names: append(
+  $o-selected-color-palettes-names,
+  "bootstrap"
+);

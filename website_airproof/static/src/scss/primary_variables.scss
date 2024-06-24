@@ -21,6 +21,7 @@ $o-website-values-palettes: (
     "btn-padding-y": 0.75rem,
     "btn-font-size": 1.25rem,
     "btn-secondary-outline": True,
+    // body-image is not necessary: you need to define a custom background shape
     'body-image': '/website_airproof/static/src/img/background-lines.svg',
     'body-image-type': 'image' or 'pattern',
     'header-template': 'airproof',
@@ -58,6 +59,7 @@ $o-theme-font-configs: (
    ),
    
 
+   // This for is not necessary
    "Proxima Nova": (
     "family": (
       "Proxima Nova Regular",

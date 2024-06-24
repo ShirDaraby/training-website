@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+<!-- I think this file can be deleted as primary variables are loaded in the manifest -->
 <record id="website_airproof.primary_variables_scss" model="theme.ir.asset">
     <field name="key">website_airproof.primary_variables_scss</field>
     <field name="name">Primary variables SCSS</field>

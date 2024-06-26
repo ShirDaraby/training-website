@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <record id="header" model="ir.ui.view">
+    <field name="name">Airproof Header</field>
+    <field name="type">qweb</field>
+    <field name="key">website_bootstrap.header</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="mode">extension</field>
+    <field name="arch" type="xml">
+        <xpath expr="//header//nav" position="replace">
+            <t t-call="website.navbar">
+                <!-- Static Content -->
+                <!-- Components -->
+                <t t-call="website.placeholder_header_brand">
+                    <t t-set="_link_class" t-valuef="me-4"/>
+                </t>
 
+                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                    <t t-call="website.submenu">
+                        <t t-set="item_class" t-valuef="nav-item"/>
+                        <t t-set="link_class" t-valuef="nav-link"/>
+                    </t>
+                </t>
+                <!-- Editable areas -->
+            </t>
+        </xpath>
+    </field>
+    </record>
 </odoo>

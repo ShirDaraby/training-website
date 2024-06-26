@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="website.template_header_contact" model="ir.ui.view">
-        <field name="active" eval="true"/>
+    <!-- <record id="website.template_header_contact" model="ir.ui.view">
+        <field name="active" eval="false"/>
     </record>
 
     <template id="template_header_opt" inherit_id="website.snippet_options" name="Header Template - Option">
         <xpath expr="//we-select[@data-variable='header-template']" position="inside">
             <we-button title="bootstrap"
                 data-customize-website-views="website_bootstrap.header"
-                data-customize-website-variable="'bootstrap'"  data-img="/website_airproof/static/src/img/wbuilder/template_header_opt.svg"/>
+                data-customize-website-variable="'bootstrap'"  data-img="/website_bootstrap/static/src/img/template_header_opt.svg"/>
+        </xpath>
+    </template>
+
+    <template id="template_header_custom" inherit_id="website.layout" name="Test Theme Custom Header Template">
+        <xpath expr="//header//nav" position="replace">
+            <nav data-name="Navbar" class="navbar navbar-expand-lg">
+                <div class="container">
+                    <t t-call="website.placeholder_header_brand"/>
+                    <t t-call="website.navbar_nav">
+                        Menu
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website.submenu">
+                                <t t-set="item_class" t-valuef="nav-item"/>
+                                <t t-set="link_class" t-valuef="nav-link"/>
+                            </t>
+                        </t>
+                        Sign In
+                        <t t-call="portal.placeholder_user_sign_in">
+                            <t t-set="_item_class" t-valuef="nav-item"/>
+                            <t t-set="_link_class" t-valuef="nav-link text-900"/>
+                        </t>
+                        User Dropdown
+                        <t t-call="portal.user_dropdown">
+                            <t t-set="_user_name" t-value="true"/>
+                            <t t-set="_item_class" t-valuef="nav-item dropdown ml-auto"/>
+                            <t t-set="_link_class" t-valuef="nav-link text-900"/>
+                        </t>
+                    </t>
+                </div>
+            </nav>
+        </xpath>
+    </template> -->
+
+    <!-- <record id="website.template_header_default" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record> -->
+    <!-- <record id="website.template_header_search" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record> -->
+
+    <template id="template_header_opt" inherit_id="website.snippet_options" name="Header Template - Option">
+        <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+            <we-button title="bootstrap" data-customize-website-views="header" data-customize-website-variable="'bootstrap'" data-img="/website_bootstrap/static/src/img/template_header_opt.svg"/>
+        </xpath>
+    </template>
+
+    <template id="portal.user_sign_in_redirect" name="User Sign In redirect" inherit_id="portal.user_sign_in" primary="True">
+        <xpath expr="//a" position="attributes">
+            <attribute name="t-attf-href">/web/login?redirect={{request.httprequest.path}}</attribute>
         </xpath>
     </template>
 

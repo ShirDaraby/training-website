@@ -12,6 +12,8 @@
     ],
    'license': ['OEEL-1'],
    'data': [
+      'data/menu.xml',
+      'data/presets.xml',
       # 'views/website_templates.xml', 
    ],
 

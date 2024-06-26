@@ -10,14 +10,14 @@
    'images': [
         'static/description/clean_screenshot.jpg',
     ],
-   # 'license': ['OEEL-1'],
+   'license': ['OEEL-1'],
    'data': [
       # 'views/website_templates.xml', 
    ],
 
     'assets': {
     'web._assets_primary_variables': [
-      ('prepend', 'website_bootstrap/static/src/scss/primary_variables.scss'),
+      'website_bootstrap/static/src/scss/primary_variables.scss',
    ],
 },
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="website.template_header_contact" model="ir.ui.view">
+        <field name="active" eval="true"/>
+    </record>
+
+    <template id="template_header_opt" inherit_id="website.snippet_options" name="Header Template - Option">
+        <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+            <we-button title="bootstrap"
+                data-customize-website-views="website_bootstrap.header"
+                data-customize-website-variable="'bootstrap'"  data-img="/website_airproof/static/src/img/wbuilder/template_header_opt.svg"/>
+        </xpath>
+    </template>
+
+</odoo>

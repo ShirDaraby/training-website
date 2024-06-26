@@ -24,8 +24,8 @@ $o-website-values-palettes: (
     // body-image is not necessary: you need to define a custom background shape
     'body-image': '/website_airproof/static/src/img/background-lines.svg',
     'body-image-type': 'image' or 'pattern',
-    'header-template': 'airproof',
-    'footer-template': 'airproof',
+    'header-template': 'contact',
+    // 'footer-template': 'airproof',
   ),
 );
 
@@ -71,31 +71,30 @@ $o-color-palettes: map-merge(
    )
 );
 
-
-$o-color-palettes: map-merge(
-    $o-color-palettes,
-   (
-      'bootstrap': (
-        //  'o-cc*-bg':                     'o-color-3',
-        //  'o-cc*-text':                   'o-color-2',
-        //  'o-cc*-headings':               'o-color-2',
-        //  'o-cc*-h2':                     'o-color-2',
-        //  'o-cc*-h3':                     'o-color-2',
-        //  'o-cc*-h4':                     'o-color-2',
-        //  'o-cc*-h5':                     'o-color-2',
-        //  'o-cc*-h6':                     'o-color-2',
-        //  'o-cc*-link':                   'o-color-1',
-        //  'o-cc*-btn-primary':            'o-color-1',
-        //  'o-cc*-btn-primary-border':     'o-color-1',
-        //  'o-cc*-btn-secondary':          'o-color-5',
-        //  'o-cc*-btn-secondary-border':   'o-color-5',
-
-      ),
-   )
-);
-
-
 $o-selected-color-palettes-names: append(
   $o-selected-color-palettes-names,
   "bootstrap"
 );
+
+
+// $o-color-palettes: map-merge(
+//     $o-color-palettes,
+//    (
+//       'bootstrap': (
+//          'o-cc*-bg':                     'o-color-3',
+//          'o-cc*-text':                   'o-color-2',
+//          'o-cc*-headings':               'o-color-2',
+//          'o-cc*-h2':                     'o-color-2',
+//          'o-cc*-h3':                     'o-color-2',
+//          'o-cc*-h4':                     'o-color-2',
+//          'o-cc*-h5':                     'o-color-2',
+//          'o-cc*-h6':                     'o-color-2',
+//          'o-cc*-link':                   'o-color-1',
+//          'o-cc*-btn-primary':            'o-color-1',
+//          'o-cc*-btn-primary-border':     'o-color-1',
+//          'o-cc*-btn-secondary':          'o-color-5',
+//          'o-cc*-btn-secondary-border':   'o-color-5',
+
+//       ),
+//    )
+// );

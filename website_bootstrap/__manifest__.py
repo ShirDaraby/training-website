@@ -10,11 +10,11 @@
    'images': [
         'static/description/clean_screenshot.jpg',
     ],
-   'license': ['OEEL-1'],
+    'license': 'OEEL-1',
    'data': [
       'data/menu.xml',
       'data/presets.xml',
-      # 'views/website_templates.xml', 
+      'views/website_template.xml', 
    ],
 
     'assets': {

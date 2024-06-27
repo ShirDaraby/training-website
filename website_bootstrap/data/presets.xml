@@ -49,11 +49,12 @@
         <field name="active" eval="False"/>
     </record> -->
 
-    <template id="template_header_opt" inherit_id="website.snippet_options" name="Header Template - Option">
+
+    <!-- <template id="template_header_opt" inherit_id="website.snippet_options" name="Header Template - Option">
         <xpath expr="//we-select[@data-variable='header-template']" position="inside">
             <we-button title="bootstrap" data-customize-website-views="header" data-customize-website-variable="'bootstrap'" data-img="/website_bootstrap/static/src/img/template_header_opt.svg"/>
         </xpath>
-    </template>
+    </template> -->
 
     <template id="portal.user_sign_in_redirect" name="User Sign In redirect" inherit_id="portal.user_sign_in" primary="True">
         <xpath expr="//a" position="attributes">

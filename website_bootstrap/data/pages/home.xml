@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Disable Default Home -->
+    <record id="website.homepage" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+
+    <!-- Home -->
+    <record id="page_home" model="website.page">
+        <field name="name">Home</field>
+        <field name="is_published" eval="True"/>
+        <field name="key">website_bootstrap.page_home</field>
+        <field name="url">/</field>
+        <field name="website_id">1</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t name="Home" t-name="website_bootstrap.page_home">
+                <!-- Title -->
+                <t t-set="additional_title" t-value="'bootstrap homepage'"/>
+                <!-- Content -->
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure">
+
+                        <!-- Main banner -->
+                        <section class="s_text_image pt80 pb80">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 pt16 pb16">
+                                        <h2>A Section Subtitle</h2>
+                                        <p>Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                                        <p>Start with the customer - find out what they want and give it to them.</p>
+                                        <p><a href="#" class="btn btn-primary">Learn more</a></p>
+                                    </div>
+                                    <div class="col-lg-6 pt16 pb16">
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" style="max-width: 290.859375px;" viewBox="0 0 290.859375 421.78125">…</svg> -->
+                                        <img src="/website_bootstrap/static/src/img/logo.png" class="img img-fluid mx-auto" alt="" data-original-mimetype="image/jpeg" data-file-name="01.svg" data-shape="theme_test_custo/blob/01" data-shape-colors=";;;;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 3 sections -->
+                        <section class="s_text_block o_colored_level o-color-4 pt64 pb32" data-snippet="s_text_block" data-name="Text" style="background-image: linear-gradient(rgb(75, 85, 99) 10%, rgb(75, 85, 99) 100%);" data-oe-shape-data="{'shape':'illustration/airproof/waves2','colors':{'c1':'#BBE1FA'},'flip':[]}">
+                            <div class="o_we_shape o_illustration_airproof_waves2" style="background-image: url(/web_editor/shape/illustration/airproof/waves2.svg?c1=%23BBE1FA);"/>
+
+                            <div class="s_allow_columns o_container_large">
+                                <h1 class="text-center text-o-color-4">Enter the House of Art!
+</h1>
+                                <p class="font-weight-bold text-center text-o-color-4">A unique place in the center of Bratislava at Laurinská 14 , where you can find dance, singing, acting, exercise as well as the Slovak Dance Theater under one roof!
+                                </p>
+                            </div>
+
+                            <div class="container">
+                                <div class="row" style="min-height: 325px;">
+
+                                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-end">
+                                        <div class="o_cc o_cc2 rounded-circle x_circle mx-auto d-flex justify-content-center align-items-center">
+                                            <img src="/web/image/website_airproof.img_glasses" alt="Glasses icon" data-mimetype="image/svg" />
+                                        </div>
+                                        <h3 class="mt-3 text-o-color-4">Immersive Flight</h3>
+                                        <p class="text-o-color-4">Thanks to our&amp;nbsp;<br/>
+Next Gen Goggles
+                                        </p>
+                                    </div>
+
+                                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-start">
+                                        <div class="o_cc o_cc1 rounded-circle x_circle mx-auto d-flex justify-content-center align-items-center">
+                                            <img src="/web/image/website_airproof.img_4k" alt="4K image" data-mimetype="image/svg" />
+                                        </div>
+                                        <h3 class="mt-3 text-o-color-4">4K Video
+                                        </h3>
+                                        <p class="text-o-color-4">Don’t compromise&amp;nbsp;<br/>
+on video quality</p>
+                                    </div>
+                                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-end">
+                                        <div class="o_cc o_cc2 rounded-circle x_circle mx-auto d-flex justify-content-center align-items-center">
+                                            <img src="/web/image/website_airproof.img_hand_drone" alt="drone hold in hand" data-mimetype="image/svg" />
+                                        </div>
+                                        <h3 class="mt-3 text-o-color-4">Palm-Sized</h3>
+                                        <p class="text-o-color-4">Small but filled&amp;nbsp;<br/>
+with advanced features</p>
+                                    </div>
+                                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-start">
+                                        <div class="o_cc o_cc1 rounded-circle x_circle mx-auto d-flex justify-content-center align-items-center">
+                                            <img src="/web/image/website_airproof.img_control" alt="Control icon" data-mimetype="image/svg" />
+                                        </div>
+                                        <h3 class="mt-3 text-o-color-4">Intuitive Control</h3>
+                                        <p class="text-o-color-4">Squeeze the trigger&amp;nbsp;<br/>
+and bolt forward</p>
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-center align-items-center" style="min-height: 325px;">
+                                    <p><a href="#" class="btn btn-primary col-lg-3">Sign up</a></p>
+                                    <p><a href="#" class="btn btn-primary col-lg-3">I want to walk around the House of Art</a></p>
+                                    <p><a href="#" class="btn btn-primary col-lg-3">Login</a></p>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!-- Products title -->
+                        <section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-color: rgb(12, 143, 229) !important;">
+                            <div class="s_allow_columns container">
+                                <h1 class="text-white">Our latest products</h1>
+                            </div>
+                        </section>
+                        <!-- Custom block products -->
+                        <!-- <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic pb32 o_colored_level s_product_product_airproof o_dynamic_empty" data-name="Products" style="background-color: #0C8FE5;" data-filter-id="3" data-template-key="website_airproof.dynamic_filter_template_product_product_airproof" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="8" data-carousel-interval="5000">
+
+                            <div class="container o_not_editable">
+                                <div class="css_non_editable_mode_hidden">
+                                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                            Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                                    </div>
+                                </div>
+                                <div class="dynamic_snippet_template"/>
+                            </div>
+                        </section> -->
+
+
+                        <!-- Tik tok -->
+                        <section class="s_text_image o_colored_level o_cc o_cc5 pt96 pb96" data-snippet="s_image_text" data-name="Image - Text" style="background:#0C8FE5;" data-oe-shape-data="{'shape':'illustration/airproof/waves','colors':{'c1':'#BBE1FA'},'flip':[]}">
+
+                            <div class="o_we_shape o_illustration_airproof_waves" style="background-image: url(/web_editor/shape/illustration/airproof/waves.svg?c1=%23BBE1FA);"/>
+
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                        <img src="/web/image/website_airproof.img_drone_flying" class="img img-fluid mx-auto o_we_image_cropped rounded-right rounded-bottom" alt="Drone flying" data-x="175" data-width="449.99999999999994" data-height="449.99999999999994" data-scale-x="1" data-scale-y="1" data-aspect-ratio="1/1" />
+                                    </div>
+
+                                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                        <h6 class="text-o-color-3">THE SKY IS THE LIMIT</h6>
+                                        <h1 class="pb-4">The TikTok Creator's <br/>
+Dream Drone</h1>
+                                        <p class="pb-3 lead font-weight-bold">This drone offers true vertical video shooting for all your TikTok and Instagram Reels needs.
+                                        </p>
+                                        <p>
+                                            <a href="#" class="mb-2 btn btn-secondary btn-lg x_btn_shape">Read more<img src="/web/image/website_airproof.img_arrow" alt="arrow icon" class="img img-fluid ml-2" />
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+
+</odoo>

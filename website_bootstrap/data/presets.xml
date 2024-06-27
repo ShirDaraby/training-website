@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- <record id="website.template_header_contact" model="ir.ui.view">
+    <!-- <record id="website.template_header_default" model="ir.ui.view">
         <field name="active" eval="false"/>
     </record>
 
@@ -12,54 +12,231 @@
         </xpath>
     </template>
 
-    <template id="template_header_custom" inherit_id="website.layout" name="Test Theme Custom Header Template">
-        <xpath expr="//header//nav" position="replace">
-            <nav data-name="Navbar" class="navbar navbar-expand-lg">
-                <div class="container">
-                    <t t-call="website.placeholder_header_brand"/>
-                    <t t-call="website.navbar_nav">
-                        Menu
-                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                            <t t-call="website.submenu">
-                                <t t-set="item_class" t-valuef="nav-item"/>
-                                <t t-set="link_class" t-valuef="nav-link"/>
-                            </t>
-                        </t>
-                        Sign In
-                        <t t-call="portal.placeholder_user_sign_in">
-                            <t t-set="_item_class" t-valuef="nav-item"/>
-                            <t t-set="_link_class" t-valuef="nav-link text-900"/>
-                        </t>
-                        User Dropdown
-                        <t t-call="portal.user_dropdown">
-                            <t t-set="_user_name" t-value="true"/>
-                            <t t-set="_item_class" t-valuef="nav-item dropdown ml-auto"/>
-                            <t t-set="_link_class" t-valuef="nav-link text-900"/>
-                        </t>
-                    </t>
-                </div>
-            </nav>
-        </xpath>
-    </template> -->
-
-    <!-- <record id="website.template_header_default" model="ir.ui.view">
-        <field name="active" eval="False"/>
-    </record> -->
-    <!-- <record id="website.template_header_search" model="ir.ui.view">
-        <field name="active" eval="False"/>
-    </record> -->
-
-
-    <!-- <template id="template_header_opt" inherit_id="website.snippet_options" name="Header Template - Option">
-        <xpath expr="//we-select[@data-variable='header-template']" position="inside">
-            <we-button title="bootstrap" data-customize-website-views="header" data-customize-website-variable="'bootstrap'" data-img="/website_bootstrap/static/src/img/template_header_opt.svg"/>
-        </xpath>
-    </template> -->
-
     <template id="portal.user_sign_in_redirect" name="User Sign In redirect" inherit_id="portal.user_sign_in" primary="True">
         <xpath expr="//a" position="attributes">
             <attribute name="t-attf-href">/web/login?redirect={{request.httprequest.path}}</attribute>
         </xpath>
+    </template> -->
+
+    <template id="copyright" inherit_id="website.layout" name="Test copyright">
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="after">
+            <div class="o_footer_copyright" data-name="Copyright">
+                <!-- Content -->
+            </div>
+        </xpath>
     </template>
+    <record id="header" model="ir.ui.view">
+        <field name="name">Airproof Header</field>
+        <field name="type">qweb</field>
+        <field name="key">website_airproof.header</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="mode">extension</field>
+        <field name="active">True</field>
+        <field name="arch" type="xml">
+            <xpath expr="//header//nav" position="replace">
+                <t t-call="website.navbar">
+                    <t t-set="_navbar_classes" t-valuef="d-none d-lg-block shadow-sm"/>
+
+                    <!-- <t t-set="_navbar_expand_class" t-valuef="None"/> -->
+
+                    <div id="o_main_nav" class="o_main_nav container flex-wrap airproof_header">
+
+                        <div class="o_header_hide_on_scroll d-grid align-items-center w-100 o_grid_header_3_cols pb-3">
+                            <!-- Navbar -->
+                            <t t-call="website.navbar_nav">
+                                <t t-set="_nav_class" t-valuef="pb-0"/>
+
+                                <!-- Menu -->
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item"/>
+                                        <t t-set="link_class" t-valuef="nav-link"/>
+                                    </t>
+                                </t>
+                            </t>
+                            <!-- Brand -->
+                            <t t-call="website.placeholder_header_brand">
+                                <t t-set="_link_class" t-valuef="mw-100 mx-auto"/>
+                            </t>
+                            <ul class="o_header_hamburger_right_col navbar-nav flex-row gap-2 align-items-center ms-auto">
+                                <!-- Language Selector -->
+                                <t t-call="website.placeholder_header_language_selector">
+                                    <t t-set="_div_classes" t-valuef="h-100 border-start o_border_contrast"/>
+                                    <t t-set="_btn_class" t-valuef="o_navlink_background_hover h-100 rounded-0 text-reset"/>
+                                    <t t-set="_txt_class" t-valuef="small"/>
+                                    <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-end"/>
+                                </t>
+
+                                <!-- Sign in main edit
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_item_class" t-valuef="nav-item"/>
+                                    <t t-set="_link_class" t-valuef="nav-link"/>
+                                </t> -->
+
+                                <!-- Sign in -->
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_item_class" t-valuef="nav-item"/>
+                                    <t t-set="_link_class" t-valuef="nav-link"/>
+                                    <t t-set="_user_name" t-value="true"/>
+                                    <t t-set="link_name">John Woo</t>
+                                    <t t-set="_link_class" t-valuef="btn btn-outline-secondary d-flex align-items-center h-100 border-0"/>
+                                </t>
+
+                                <!-- Sign In -->
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_icon" t-value="true"/>
+                                    <t t-set="_item_class" t-valuef="nav-item"/>
+                                    <t t-set="_link_class" t-valuef="nav-link"/>
+                                    <t t-set="_icon_class" t-valuef="fa-stack"/>
+                                    <t t-set="_icon_class" t-valuef="fa fa-sign-in-alt"/>
+                                    <t t-set="nav_links" t-value="fa fa-sign-in-alt"/>
+                                </t>
+
+                                
+                                
+                                <!-- User portal -->
+                                <!-- <t t-call="portal.user_sign_in_redirect">
+                                    <t t-set="_item_class" t-valuef="nav-item d-table-cell text-center"/>
+                                    <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                </t> -->
+
+                                <!-- User Dropdown -->
+                                <t t-call="portal.user_dropdown">
+                                    <t t-set="_user_name" t-value="true"/>
+                                    <t t-set="_icon" t-value="false"/>
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown"/>
+                                    <t t-set="_link_class" t-valuef="nav-link"/>
+                                    <t t-set="_dropdown_menu_class" t-valuef="position-absolute"/>
+                                </t>                              
+
+                                Call To Action
+                                <!-- <t t-call="website.placeholder_header_call_to_action">
+                                    <t t-set="_icon" t-value="true"/>
+                                    <t t-set="_icon_class" t-valuef="fa-stack"/>
+                                    <t t-set="_item_class" t-valuef="flex-grow-1"/>
+                                    <t t-set="_div_class" t-valuef="d-flex align-items-center"/>
+                                </t> -->
+                            </ul>
+
+                        </div>
+                    </div>
+                </t>
+                <t t-call="website.template_header_mobile">
+                    <t t-set="_txt_elt_content" t-valuef="phone_mail"/>
+                </t>
+            </xpath>
+        </field>
+    </record>
+    <record id="footer" model="ir.ui.view">
+        <field name="name">Airproof Footer</field>
+        <field name="type">qweb</field>
+        <field name="key">website_airproof.footer</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="mode">extension</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                    <section class="s_text_block pt48 pb16" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                        <div class="container">
+                            <div class="row o_grid_mode" data-row-count="5">
+                                <div class="o_colored_level o_grid_item g-col-lg-2 g-height-5 col-lg-2" style="grid-area: 1 / 1 / 6 / 3; z-index: 1;">
+                                    <h5>Explore</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="list-item py-1">
+                                            <a href="/">Home</a>
+                                        </li>
+                                        <li class="list-item py-1">
+                                            <a href="#">Our Company</a>
+                                        </li>
+                                        <li class="list-item py-1">
+                                            <a href="#">Case Studies</a>
+                                        </li>
+                                        <li class="list-item py-1">
+                                            <a href="#">Blog</a>
+                                        </li>
+                                Follow us4
+                                    </ul>
+                                    <div class="s_social_media text-start o_not_editable" data-snippet="s_social_media" data-name="Social Media">
+                                        <h4 class="s_social_media_title d-none o_default_snippet_text">Social Media</h4>
+                                        <a href="/website/social/facebook" class="s_social_media_facebook" target="_blank" aria-label="Facebook">
+                                            <i class="fa fa-facebook rounded shadow-sm o_editable_media"/>
+                                        </a>
+                                        <a href="/website/social/twitter" class="s_social_media_twitter" target="_blank" aria-label="Twitter">
+                                            <i class="fa fa-twitter rounded shadow-sm o_editable_media"/>
+                                        </a>
+                                        <a href="/website/social/linkedin" class="s_social_media_linkedin" target="_blank" aria-label="LinkedIn">
+                                            <i class="fa fa-linkedin rounded shadow-sm o_editable_media"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="o_grid_item g-col-lg-2 g-height-5 col-lg-2" style="grid-area: 1 / 3 / 6 / 5; z-index: 2;">
+                                    <h5>Services</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="py-1">
+                                            <a href="#">Documentation</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a href="#">Marketplace</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a href="#">Design</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a href="#">Resources</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="o_grid_item g-col-lg-2 g-height-5 col-lg-2" style="grid-area: 1 / 5 / 6 / 7; z-index: 3;">
+                                    <h5>Follow us5</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="py-1">
+                                            <i class="fa fa-1x fa-fw fa-facebook-square me-2"/>
+                                            <a href="/website/social/facebook" target="_blank">Facebook</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <i class="fa fa-1x fa-fw fa-twitter-square me-2"/>
+                                            <a href="/website/social/twitter" target="_blank">Twitter</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <i class="fa fa-1x fa-fw fa-linkedin-square me-2"/>
+                                            <a href="/website/social/linkedin" target="_blank">Linkedin</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <i class="fa fa-1x fa-fw fa-instagram me-2"/>
+                                            <a href="/website/social/instagram" target="_blank">Instagram</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="o_colored_level o_grid_item g-col-lg-3 g-height-5 col-lg-3" style="grid-area: 1 / 7 / 6 / 10; z-index: 4;">
+                                    <h5>Get in touch</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="py-1">
+                                            <i class="fa fa-1x fa-fw fa-envelope me-2"/>
+                                            <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <i class="fa fa-1x fa-fw fa-phone me-2"/>
+                                            <span class="o_force_ltr">
+                                                <a href="tel:+1(650)555-0111">+1 (650) 555-0111</a>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="o_colored_level o_grid_item g-col-lg-3 g-height-5 col-lg-3" style="grid-area: 1 / 10 / 6 / 13; z-index: 5;">
+                                    <h5>MyCompany</h5>
+                                    <p class="text-muted">250 Executive Park Blvd, Suite 3400 <br/>
+ San Francisco CA 94134 <br/>
+United States</p>
+                            </div>
+                            <div class="o_colored_level o_grid_item g-col-lg-3 g-height-1 col-lg-3" style="z-index: 6; grid-area: 4 / 10 / 5 / 13;">
+                                <h5>test</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </field>
+</record>
 
 </odoo>

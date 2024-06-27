@@ -45,7 +45,7 @@
                             <div class="o_we_shape o_illustration_airproof_waves2" style="background-image: url(/web_editor/shape/illustration/airproof/waves2.svg?c1=%23BBE1FA);"/>
 
                             <div class="s_allow_columns o_container_large">
-                                <h1 class="text-center text-o-color-4">Enter the House of Art!
+                                <h1 class="fw-bold text-center text-o-color-4">Enter the House <strong class="x_stroke_text">of Art!</strong>
 </h1>
                                 <p class="font-weight-bold text-center text-o-color-4">A unique place in the center of Bratislava at Laurinská 14 , where you can find dance, singing, acting, exercise as well as the Slovak Dance Theater under one roof!
                                 </p>
@@ -90,10 +90,10 @@ with advanced features</p>
 and bolt forward</p>
                                     </div>
                                 </div>
-                                <div class="row d-flex justify-content-center align-items-center" style="min-height: 325px;">
-                                    <p><a href="#" class="btn btn-primary col-lg-3">Sign up</a></p>
-                                    <p><a href="#" class="btn btn-primary col-lg-3">I want to walk around the House of Art</a></p>
-                                    <p><a href="#" class="btn btn-primary col-lg-3">Login</a></p>
+                                <div class="d-flex d-inline-flex justify-content-center align-items-center" style="min-height: 325px;">
+                                    <p><a href="#" class="btn btn-primary x_btn_left_gradient">Sign up</a></p>
+                                    <p><a href="#" class="btn btn-primary x_btn_middle_gradient">I want to walk around the House of Art</a></p>
+                                    <p><a href="#" class="btn btn-primary">Login</a></p>
                                 </div>
                             </div>
                         </section>

@@ -24,6 +24,7 @@
     'assets': {
     'web._assets_primary_variables': [
       'website_bootstrap/static/src/scss/primary_variables.scss',
+      'website_bootstrap/static/src/scss/homepage.scss',
    ],
 },
 }

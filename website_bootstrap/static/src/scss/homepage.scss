@@ -1,0 +1,29 @@
+#wrapwrap {
+    .x_btn_left_gradient {
+       background: linear-gradient(rgb(0, 255, 213) 100%, rgb(0, 225, 255) 100%);
+    }
+
+    .x_btn_middle_gradient {
+        background-image: linear-gradient(to left, rgb(0, 225, 255), #d3104d);
+        color: #ffffff;
+        margin: 20px;
+        padding: 20px;
+        font-weight: 700;
+    }
+
+     .x_btn_middle_gradient:hover {
+        background-image: linear-gradient(to right, rgb(0, 225, 255), #d3104d);
+    }
+
+    // .btn_test {
+    //     background-image: linear-gradient(to left, red, yellow);
+    //     color: #000;
+    // }
+
+
+    .x_stroke_text {
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        color: #ffffff00;
+    }
+}

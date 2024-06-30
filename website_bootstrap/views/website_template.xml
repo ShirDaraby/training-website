@@ -1,48 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="header" model="ir.ui.view">
-    <field name="name">bootstrap Header</field>
-    <field name="type">qweb</field>
-    <field name="key">website_bootstrap.header</field>
-    <field name="inherit_id" ref="website.layout"/>
-    <field name="mode">extension</field>
-    <field name="arch" type="xml">
-        <xpath expr="//header//nav" position="replace">
-            <t t-call="website.navbar">
-                <t t-set="_navbar_classes" t-valuef="d-none d-lg-block shadow-sm"/>
+        <field name="name">bootstrap Header</field>
+        <field name="type">qweb</field>
+        <field name="key">website_bootstrap.header</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="mode">extension</field>
+        <field name="arch" type="xml">
+            <xpath expr="//header//nav" position="replace">
+                <t t-call="website.navbar">
+                    <t t-set="_navbar_classes" t-valuef="d-none d-lg-block shadow-sm"/>
 
-                <div id="o_main_nav" class="o_main_nav container flex-wrap bootstrap_header">
-                    <!-- Static Content -->
-                    <!-- Components -->
-                    <t t-call="website.placeholder_header_brand">
-                        <t t-set="_link_class" t-valuef="me-4"/>
-                    </t>
-
-                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                        <t t-call="website.submenu">
-                            <t t-set="item_class" t-valuef="nav-item"/>
-                            <t t-set="link_class" t-valuef="nav-link"/>
+                    <div id="o_main_nav" class="o_main_nav container flex-wrap bootstrap_header">
+                        <!-- Static Content -->
+                        <!-- Components -->
+                        <t t-call="website.placeholder_header_brand">
+                            <t t-set="_link_class" t-valuef="me-4"/>
                         </t>
-                    </t>
-                    <!-- Editable areas -->
-                </div>
-            </t>
-        </xpath>
-    </field>
+                        <!-- Sign in -->
+                        <t t-call="portal.placeholder_user_sign_in">
+                            <t t-set="_item_class" t-valuef="nav-item-test"/>
+                            <t t-set="_link_class" t-valuef="item-link-test"/>
+                            <t t-set="_user_name" t-value="true"/>
+                            <t t-set="link_name">John Woo</t>
+                            <!-- <t t-set="_link_class" t-valuef="btn btn-outline-secondary d-flex align-items-center h-100 border-0"/> -->
+                        </t>
+                        <ul class="o_header_hamburger_right_col navbar-nav flex-row gap-2 align-items-center ms-auto">
+                            <t>
+                                <div groups="base.group_public" class="nav-item">
+                                    <a t-attf-href="/web/login" class="nav-link">Sign in<span t-if="request.session.profile_session" class="text-danger fa fa-circle"/>
+                                    </a>
+                                </div>
+                            </t>
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-valuef="nav-item"/>
+                                    <t t-set="link_class" t-valuef="item-link-test"/>
+                                </t>
+                            </t>
+                        </ul>
+                        <!-- Editable areas -->
+                    </div>
+                </t>
+            </xpath>
+        </field>
     </record>
 
     <!-- Theme Header - Option -->
     <template id="template_header_opt" inherit_id="website.template_header_hamburger" name="test Template Header Hamburger - Option">
         <xpath expr="//we-select[@data-variable='header-template']" position="inside">
-            <we-button title="Custom hamburger bootstrap"
-                data-customize-website-views="website_bootstrap.template_header_hamburger"
-                data-customize-website-variable="'Custom hamburger bootstrap'"
-                data-img="/website_bootstrap/static/src/img/template_header_opt.svg"/>
+            <we-button title="Custom hamburger bootstrap" data-customize-website-views="website_bootstrap.template_header_hamburger" data-customize-website-variable="'Custom hamburger bootstrap'" data-img="/website_bootstrap/static/src/img/template_header_opt.svg"/>
         </xpath>
     </template>
 
-    <template id="template_header_hamburger" inherit_id="website.layout" name="test Template Header Hamburger" active="true">
-        <xpath expr="//header//nav" position="replace">
+    <template id="template_header_hamburger_new_opt" inherit_id="website.template_header_hamburger" name="test Template Header Hamburger" active="true">
+        <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+            <we-button title="Custom hamburger bootstrap" data-customize-website-views="website_bootstrap.template_header_hamburger" data-customize-website-variable="'Custom hamburger bootstrap'" data-img="/website_bootstrap/static/src/img/template_header_opt.svg"/>
             <t t-call="website.navbar">
                 <t t-set="_navbar_classes" t-valuef="d-none d-lg-block shadow-sm"/>
                 <t t-set="_navbar_expand_class" t-valuef="None"/>
@@ -137,10 +150,10 @@
         <xpath expr="//ul[hasclass('o_header_hamburger_right_col')]" position="attributes">
             <attribute name="class" add="order-0 me-auto" remove="ms-auto" separator=" "/>
         </xpath>
-        <xpath expr="//t[@t-call='website.placeholder_header_brand']" position="inside" >
+        <xpath expr="//t[@t-call='website.placeholder_header_brand']" position="inside">
             <t t-set="_link_class" t-valuef="order-1 mx-auto mw-100"/>
         </xpath>
-        <xpath expr="//div[@id='top_menu_collapse']" position="attributes" >
+        <xpath expr="//div[@id='top_menu_collapse']" position="attributes">
             <attribute name="class" add="offcanvas-end" remove="offcanvas-start" separator=" "/>
         </xpath>
         <xpath expr="//t[@t-call='portal.user_dropdown']//t[@t-set='_dropdown_menu_class']" position="replace"/>

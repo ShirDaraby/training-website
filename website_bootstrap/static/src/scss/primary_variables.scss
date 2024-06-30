@@ -20,7 +20,8 @@ $o-website-values-palettes: (
     // buttons
     "btn-padding-y": 0.75rem,
     "btn-font-size": 1.25rem,
-    "btn-secondary-outline": True,
+    "btn-secondary-outline": false,
+    "btn-primary-outline": false,
     // body-image is not necessary: you need to define a custom background shape
     'body-image': '/website_airproof/static/src/img/background-lines.svg',
     'body-image-type': 'image' or 'pattern',
@@ -63,7 +64,7 @@ $o-color-palettes: map-merge(
    (
       'bootstrap': (
          'o-color-1':                    #d3104d,
-         'o-color-2':                    #1c1e22,
+         'o-color-2':                    rgb(28, 30, 34),
          'o-color-3':                    #f2f2f2,
          'o-color-4':                    #ffffff,
          'o-color-5':                    #000000,

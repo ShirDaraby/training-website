@@ -39,7 +39,7 @@
 
                     <!-- <t t-set="_navbar_expand_class" t-valuef="None"/> -->
 
-                    <div id="o_main_nav" class="o_main_nav container flex-wrap airproof_header">
+                    <div id="o_main_nav" class="o_main_nav container flex-wrap bootstrap_header">
 
                         <div class="o_header_hide_on_scroll d-grid align-items-center w-100 o_grid_header_3_cols pb-3">
                             <!-- Navbar -->
@@ -127,7 +127,7 @@
             </xpath>
         </field>
     </record>
-    <record id="footer" model="ir.ui.view">
+    <!-- <record id="footer" model="ir.ui.view">
         <field name="name">Airproof Footer</field>
         <field name="type">qweb</field>
         <field name="key">website_airproof.footer</field>
@@ -237,6 +237,6 @@ United States</p>
             </div>
         </xpath>
     </field>
-</record>
+</record> -->
 
 </odoo>

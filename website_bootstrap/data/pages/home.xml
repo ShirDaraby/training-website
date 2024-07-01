@@ -34,7 +34,7 @@
                                     </div>
                                     <div class="col-lg-6 pt16 pb16">
                                         <!-- <svg xmlns="http://www.w3.org/2000/svg" style="max-width: 290.859375px;" viewBox="0 0 290.859375 421.78125">…</svg> -->
-                                        <img src="/website_bootstrap/static/src/img/logo.png" class="img img-fluid mx-auto" alt="" data-original-mimetype="image/jpeg" data-file-name="01.svg" data-shape="theme_test_custo/blob/01" data-shape-colors=";;;;"/>
+                                        <img src="/website_bootstrap/static/src/img/drone.png" class="img img-fluid mx-auto" alt="" data-original-mimetype="image/png" data-file-name="01.svg" data-shape="theme_test_custo/blob/01" data-shape-colors=";;;;"/>
                                     </div>
                                 </div>
                             </div>
@@ -52,10 +52,10 @@
                                 </h3>
                             </div>
 
-                            <div class="container">
-                                <div class="row d-flex justify-content-center align-items-center" style="min-height: 325px;">
+                            <div class="container s_allow_columns">
+                                <div class="row d-flex justify-content-center align-items-center oe_img_bg" style="min-height: 325px;">
 
-                                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-end">
+                                    <div class="pt32 pb32 text-center o_colored_level col-lg-2 align-self-end o_default_snippet_text">
                                         <div class="o_cc o_cc2 rounded x_circle mx-auto d-flex justify-content-center align-items-center">
                                             <img src="/web/image/website_airproof.img_glasses" alt="Glasses icon" data-mimetype="image/svg" />
                                         </div>
@@ -65,7 +65,7 @@ Next Gen Goggles
                                         </p>
                                     </div>
 
-                                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-start">
+                                    <div class="pt32 pb32 text-center o_colored_level col-lg-2 align-self-start">
                                         <div class="o_cc o_cc1 rounded x_circle mx-auto d-flex justify-content-center align-items-center">
                                             <img src="/web/image/website_airproof.img_4k" alt="4K image" data-mimetype="image/svg" />
                                         </div>
@@ -74,7 +74,7 @@ Next Gen Goggles
                                         <p class="text-o-color-4">Don’t compromise&amp;nbsp;<br/>
 on video quality</p>
                                     </div>
-                                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-end">
+                                    <div class="pt32 pb32 text-center o_colored_level col-lg-2 align-self-end">
                                         <div class="o_cc o_cc2 rounded x_circle mx-auto d-flex justify-content-center align-items-center">
                                             <img src="/web/image/website_airproof.img_hand_drone" alt="drone hold in hand" data-mimetype="image/svg" />
                                         </div>
@@ -82,10 +82,8 @@ on video quality</p>
                                         <p class="text-o-color-4">Small but filled&amp;nbsp;<br/>
 with advanced features</p>
                                     </div>
-                                </div>
-                                <div class="row d-flex justify-content-center align-items-center" style="min-height: 325px;">
 
-                                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-end">
+                                    <div class="pt32 pb32 text-center o_colored_level col-lg-2 align-self-end">
                                         <div class="o_cc o_cc2 rounded x_circle mx-auto d-flex justify-content-center align-items-center">
                                             <img src="/web/image/website_airproof.img_glasses" alt="Glasses icon" data-mimetype="image/svg" />
                                         </div>
@@ -95,7 +93,7 @@ Next Gen Goggles
                                         </p>
                                     </div>
 
-                                    <div class="pt32 pb32 text-center o_colored_level col-lg-3 align-self-start">
+                                    <div class="pt32 pb32 text-center o_colored_level col-lg-2 align-self-start">
                                         <div class="o_cc o_cc1 rounded x_circle mx-auto d-flex justify-content-center align-items-center">
                                             <img src="/web/image/website_airproof.img_4k" alt="4K image" data-mimetype="image/svg" />
                                         </div>
@@ -113,6 +111,71 @@ on video quality</p>
                             </div>
                         </section>
 
+                        <!-- adding map -->
+                        <!-- <template id="s_map_options" inherit_id="website.snippet_options">
+                        </template> -->
+                        <template name="Map" id="s_map">
+                            <section class="s_map pb56 pt56" data-map-type="m" data-map-zoom="12" t-att-data-map-address="' '.join(filter(None, (user_id.company_id.street, user_id.company_id.city, user_id.company_id.state_id.display_name, user_id.company_id.country_id.display_name)))">
+                                <div class="map_container o_not_editable">
+                                    <div class="css_non_editable_mode_hidden">
+                                        <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                            An address must be specified for a map to be embedded
+                                        </div>
+                                    </div>
+                                    <iframe t-if="not test_mode_enabled" class="s_map_embedded o_not_editable" src="https://maps.google.com/maps?q=250%20Executive%20Park%20Blvd%2C%20Suite%203400%20San%20Francisco%20California%20(US)%20United%20States&amp;t=m&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" aria-label="Map"/>
+                                    <div class="s_map_color_filter"/>
+                                </div>
+                            </section>
+                        </template>
+
+
+                        <!-- section news - events -->
+                        <section class="s_text_block o_colored_level o-color-2 pt64 pb32" data-snippet="s_text_block" data-name="Text" style="background-image: linear-gradient(rgb(28, 30, 34) 0%, rgb(75, 85, 99) 100%);" data-oe-shape-data="{'shape':'illustration/airproof/waves2','colors':{'c1':'#BBE1FA'},'flip':[]}">
+                            <div class="s_allow_columns o_container_large">
+                                <h2 class="fw-bold text-center text-o-color-4">NEWS</h2>
+                            </div>
+                            <div class="row d-flex justify-content-center align-items-center" style="min-height: 325px;">
+                                <div class="pt32 pb32 col-lg-2 x_card_news">
+                                <a href="#">
+                                    <img src="website_bootstrap/static/src/img/clanoknahlad.webp" class="img img-fluid mx-auto rounded"/>
+                                    <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
+                                    <h4 class="fw-bold mt-3 text-o-color-4 text-start">SILENT VIBE IS NEW IN THE SUMMER SCHEDULE</h4>
+                                    <p class="text-o-color-4 text-start">An hour where music becomes your private world. Feel like you're at a Silent Disco.</p>
+                                </a>
+                                </div>
+
+                                <div class="pt32 pb32 col-lg-2 x_card_news">
+                                <a href="#">
+                                    <img src="/website_bootstrap/static/src/img/nahlad.webp" class="img img-fluid mx-auto rounded"/>
+                                    <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
+                                    <h4 class="fw-bold mt-3 text-o-color-4 text-start">SUMMER SCHEDULE IN THE HOUSE OF ART</h4>
+                                    <p class="text-o-color-4 text-start">Check out the news that we have prepared for you in the summer schedule.</p>
+                                </a>
+                                </div>
+
+                                <div class="pt32 pb32 col-lg-2 x_card_news">
+                                <a href="#">
+                                    <img src="/website_bootstrap/static/src/img/IDOLWEEK.webp" class="img img-fluid mx-auto rounded"/>
+                                    <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
+                                    <h4 class="fw-bold mt-3 text-o-color-4 text-start">IDOL WEEK</h4>
+                                    <p class="text-o-color-4 text-start">An hour where music becomes your private world. Feel like you're at a Silent Disco.</p>
+                                </a>
+                                </div>
+
+                                <div class="pt32 pb32 col-lg-2 x_card_news">
+                                <a href="#">
+                                    <img src="/website_bootstrap/static/src/img/letneclenstvo.webp" class="img img-fluid mx-auto rounded" alt="Glasses icon" data-mimetype="image/webp"/>
+                                    <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
+                                    <h4 class="fw-bold mt-3 text-o-color-4 text-start">SUMMER MEMBERSHIP IN THE HOUSE OF ART</h4>
+                                    <p class="text-o-color-4 text-start">An hour where music becomes your private world. Feel like you're at a Silent Disco.</p>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p><a href="#" class="btn btn-primary x_btn_orange_red_gradient">I want to walk around the House of Art</a></p>
+                            </div>
+                        </section>
+
 
                         <!-- Products title -->
                         <section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-color: rgb(12, 143, 229) !important;">
@@ -120,6 +183,7 @@ on video quality</p>
                                 <h1 class="text-white">Our latest products</h1>
                             </div>
                         </section>
+        
                         <!-- Custom block products -->
                         <!-- <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic pb32 o_colored_level s_product_product_airproof o_dynamic_empty" data-name="Products" style="background-color: #0C8FE5;" data-filter-id="3" data-template-key="website_airproof.dynamic_filter_template_product_product_airproof" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="8" data-carousel-interval="5000">
 

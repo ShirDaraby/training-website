@@ -2,7 +2,26 @@
 <odoo>
 
     <record id="website.default_website" model="website">
-    <field name="logo" type="base64" file="website_bootstrap/static/src/img/logo.png"/>
+    <field name="logo-rdsag" type="base64" file="website_bootstrap/static/src/img/logo-rdsag.svg"/>
     </record>
 
+    <record id="website.default_website" model="website">
+    <field name="drone.png" type="base64" file="website_bootstrap/static/src/img/drone.png"/>
+    </record>
+
+    <record id="website.default_website" model="website">
+    <field name="letneclenstvo" type="base64" file="website_bootstrap/static/src/img/letneclenstvo.webp"/>
+    </record>
+
+    <record id="website.default_website" model="website">
+    <field name="IDOLWEEK" type="base64" file="website_bootstrap/static/src/img/IDOLWEEK.webp"/>
+    </record>
+
+    <record id="website.default_website" model="website">
+    <field name="nahlad" type="base64" file="website_bootstrap/static/src/img/nahlad.webp"/>
+    </record>
+
+    <record id="website.default_website" model="website">
+    <field name="clanoknahlad" type="base64" file="website_bootstrap/static/src/img/clanoknahlad.webp"/>
+    </record>
 </odoo>

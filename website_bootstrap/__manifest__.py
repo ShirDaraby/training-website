@@ -16,7 +16,8 @@
       'data/menu.xml',
       'data/presets.xml',
       'data/images.xml',
-      'views/website_template.xml', 
+      'views/website_template.xml',
+      'views/snippets/options.xml',
       # pages
       'data/pages/home.xml',
    ],

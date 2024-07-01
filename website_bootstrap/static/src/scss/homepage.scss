@@ -1,5 +1,22 @@
 .x_btn_left_gradient {
-    background: linear-gradient(rgb(0, 255, 213) 100%, rgb(0, 225, 255) 100%);
+    background-image: linear-gradient(to left, rgb(0, 255, 157), #00e1ff);
+}
+
+.x_btn_left_gradient:hover {
+    background-image: linear-gradient(to left, #00e1ff, rgb(0, 255, 157));
+}
+
+.x_btn_orange_red_gradient {
+    background-image: linear-gradient(to left, rgb(255, 102, 0), #d3104d);
+    color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    font-weight: 700;
+    stroke: none;
+}
+
+.x_btn_orange_red_gradient:hover {
+    background-image: linear-gradient(to left, #d3104d, rgb(255, 102, 0));
 }
 
 .x_btn_middle_gradient {
@@ -10,7 +27,7 @@
     font-weight: 700;
 }
 
-    .x_btn_middle_gradient:hover {
+.x_btn_middle_gradient:hover {
     background-image: linear-gradient(to right, rgb(0, 225, 255), #d3104d);
 }
 
@@ -37,4 +54,16 @@
 
 .item-link-test {
     color: green !important;
+}
+
+.x_card_news:hover {
+    .img {
+        transform: scale(1.1);
+    }
+
+    .x_date {
+        color: #ffffff;
+        // text-transform: uppercase;
+        text-decoration: none;
+    }
 }

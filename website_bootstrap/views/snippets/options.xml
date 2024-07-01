@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Add custom snippets to the builder -->
+    <!-- <template id="snippets" inherit_id="website.snippets" name="Custom snippets">
+        <xpath expr="//*[@id='default_snippets']" position="before">
+            <t id="x_snippets">
+                <div id="x_snippets_category" class="o_panel">
+                    <div class="o_panel_header">Airproof ecommerce</div>
+                    <div class="o_panel_body">
+                        <t t-snippet="website_airproof.s_airproof_newsletter" t-thumbnail="/website_airproof/static/src/img/wbuilder/s_airproof_newsletter.svg">
+                            <keywords>Newsletter block</keywords>
+                        </t>
+                    </div>
+                    <div class="o_panel_body">
+                        <t t-snippet="website_airproof.s_airproof_test" t-thumbnail="/website_airproof/static/src/img/wbuilder/s_airproof_newsletter.svg">
+                            <keywords>Airproof test</keywords>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template> -->
+
+    <template id="s_three_columns" inherit_id="website.s_three_columns" name="bootstrap s_three_columns">
+        <xpath expr="//div[hasclass('card')]" position="attributes">
+            <div class="o_we_bg_filter" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.15) 100%) !important;"/>
+        </xpath>
+    </template>
+</odoo>

@@ -20,6 +20,7 @@
       'views/snippets/options.xml',
       # pages
       'data/pages/home.xml',
+      # 'data/pages/lecturers.xml',
    ],
 
     'assets': {

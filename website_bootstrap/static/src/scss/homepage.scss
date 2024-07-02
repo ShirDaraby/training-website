@@ -67,3 +67,14 @@
         text-decoration: none;
     }
 }
+
+.x_card_classes:hover {
+    transform: scale(1.5);
+    fill: #00e1ff;
+    stroke: #d3104d;
+}
+
+.x_test:hover {
+    background-color: rgb(5, 126, 126) !important;
+    transform: scale(1.5);
+}

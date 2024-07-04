@@ -106,10 +106,11 @@
     <!-- Blog inner pages -->
     <record id="menu_lecturers" model="website.menu">
         <field name="name">lecturers</field>
+        <field name="url">/lecturers</field>
+        <field name="website_id">1</field>
         <field name="parent_id" search="[
             ('url', '=', '/default-main-menu'),
             ('website_id', '=', 1)]"/>
-        <field name="website_id">1</field>
         <field name="sequence" type="int">30</field>
     </record>
     <!-- <record id="menu_blog_item_1" model="website.menu">
@@ -133,6 +134,10 @@
         <field name="parent_id" ref="website_airproof.menu_blog"/>
         <field name="sequence" type="int">3</field>
     </record> -->
+
+
+    <delete model="website.menu" search="[('url','in', ['/', '/blog']),
+('website_id', '=', 1)]"/>
 
     <record id="menu_news" model="website.menu">
         <field name="name">news</field>

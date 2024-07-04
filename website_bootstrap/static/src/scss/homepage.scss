@@ -56,25 +56,128 @@
     color: green !important;
 }
 
+.x_card_news {
+    background: rgb(243, 243, 243);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.158);
+    border-radius: 10px;
+
+    .x_date {
+        color: #979797;
+        text-decoration: none;
+        font-size: 16px;
+    }
+}
+
 .x_card_news:hover {
     .img {
         transform: scale(1.1);
     }
 
     .x_date {
-        color: #ffffff;
+        color: #686868;
         // text-transform: uppercase;
         text-decoration: none;
     }
 }
 
-.x_card_classes:hover {
-    transform: scale(1.5);
-    fill: #00e1ff;
-    stroke: #d3104d;
+.x_card_classes {
+    background-image: linear-gradient(rgb(0, 255, 0) 0%, rgb(201, 236, 216) 100%);
+    position: relative;
+    // border: #fbff00;
+    width: 200px;
+    height: 200px;
+
+
+    .card_description {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+    }
 }
 
-.x_test:hover {
-    background-color: rgb(5, 126, 126) !important;
+.x_card_classes:hover {
+    background: #15b137;
     transform: scale(1.5);
+    // height: auto;
+    border: #139930 solid 5px;
+    
+
+    .card_description {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .img {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
+
+.img_height {
+    height: 250px;
+}
+
+    // .x_card_classes {
+    //     background-image: linear-gradient(rgb(0, 255, 0) 0%, rgb(201, 236, 216) 100%);
+    //     position: relative;
+    //     width: 300px;
+    //     height: 300px;
+    //     // border: #fbff00;
+    //     overflow: hidden;
+
+    //     .img {
+    //         display: block;
+    //     }
+
+
+    //     .card_description {
+    //         position: absolute;
+    //         visibility: hidden;
+    //         display: flex;
+    //     }
+    // }
+
+    // .x_card_classes:hover {
+    //     background: #15b137;
+    //     transform: scale(1.5);
+    //     // height: auto;
+    //     border: #139930 solid 5px;
+    //     height: 100%;
+    //     width: 100%;
+
+    //     .img {
+    //         // visibility: hidden;
+    //         display: none;
+    //     }
+
+    //     .card_description {
+    //         display: flex;
+    //     }
+    // }
+
+// .x_test:hover {
+//     background-color: rgb(5, 126, 126) !important;
+//     transform: scale(1.5);
+// }
+
+.x_card_test {
+    background-image: url(/website_bootstrap/static/src/img/nahlad.webp);
+    background-image: linear-gradient(rgb(0, 255, 0) 0%, rgb(201, 236, 216) 100%);
+    // background:
+    // linear-gradient(to bottom, rgba(221, 238, 227, 0.52), rgba(117, 19, 93, 0.73)),
+    // url('/website_bootstrap/static/src/img/nahlad.webp') cover no-repeat;
+}
+
+.x_card_test {
+    background-image: url(/website_bootstrap/static/src/img/nahlad.webp);
+    background-image: linear-gradient(rgb(0, 255, 0) 0%, rgb(201, 236, 216) 100%);
+    // background:
+    // linear-gradient(to bottom, rgba(221, 238, 227, 0.52), rgba(117, 19, 93, 0.73)),
+    // url('/website_bootstrap/static/src/img/nahlad.webp') cover no-repeat;
+}
+
+// .x_cards {
+//     grid-template-columns: repeat(5, 100px);
+//     background-color: #d3104d;
+//     width: auto;
+// }

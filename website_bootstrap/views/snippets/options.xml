@@ -26,4 +26,27 @@
             <div class="o_we_bg_filter" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.15) 100%) !important;"/>
         </xpath>
     </template>
+
+
+    <!-- Add custom template for dynamic posts block -->
+    <template id="dynamic_filter_template_blog_post_news" name="Blog news">
+        <!-- <section class="s_text_block o_colored_level o-color-2 pt64 pb32" data-snippet="s_text_block" data-name="Text" style="background-image: linear-gradient(rgb(28, 30, 34) 0%, rgb(75, 85, 99) 100%);" data-oe-shape-data="{'shape':'illustration/airproof/waves2','colors':{'c1':'#BBE1FA'},'flip':[]}"> -->
+        <div class="row d-flex justify-content-center align-items-center">
+            <t t-foreach="records" t-as="data" data-number-of-elements="3" data-number-of-elements-lg="6" data-number-of-elements-sm="1" data-number-of-elements-fetch="8">
+                <t t-set="record" t-value="data['_record']"/>
+                <div class="pt32 pb32 col-lg-4 m-4 x_card_news">
+                    <a href="#">
+                        <!-- <img src="/website_bootstrap/static/src/img/nahlad.webp" class="img img-fluid mx-auto rounded"/> -->
+                        <img class="img img-fluid mx-auto rounded" t-attf-src="data:image/png;base64,#{record.icon_image}"/>
+                        <h4 class="fw-bold mt-3 text-start x_date" t-field="record.published_date"/>
+                        <h4 class="fw-bold mt-3 text-o-color-2 text-start" t-field="record.name"/>
+                        <p class="text-o-color-2 text-start">Check out the news that we have prepared for you in the summer schedule.</p>
+                    </a>
+                </div>
+            </t>
+        </div>
+
+        <!-- </section> -->
+
+    </template>
 </odoo>

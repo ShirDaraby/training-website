@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Bg shapes -->
+    <record id="shape_waves" model="ir.attachment">
+        <field name="name">rdstest.svg</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/src/img/bg-pattern-lecturers-shape.svg"/>
+        <field name="url">/web_editor/shape/illustration/bootstrap/rdstest.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+
+</odoo>

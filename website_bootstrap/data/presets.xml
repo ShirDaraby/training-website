@@ -26,9 +26,9 @@
         </xpath>
     </template>
     <record id="header" model="ir.ui.view">
-        <field name="name">Airproof Header</field>
+        <field name="name">bootstrap Header</field>
         <field name="type">qweb</field>
-        <field name="key">website_airproof.header</field>
+        <field name="key">website_bootstrap.header</field>
         <field name="inherit_id" ref="website.layout"/>
         <field name="mode">extension</field>
         <field name="active">True</field>

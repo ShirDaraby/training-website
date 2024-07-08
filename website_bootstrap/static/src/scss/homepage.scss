@@ -56,6 +56,12 @@
     color: green !important;
 }
 
+.x_card_news_home {
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: none !important;
+}
+
 .x_card_news {
     background: rgb(243, 243, 243);
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.158);
@@ -80,13 +86,37 @@
     }
 }
 
-.x_card_classes {
-    background-image: linear-gradient(rgb(0, 255, 0) 0%, rgb(201, 236, 216) 100%);
+// .x_main_banner {
+//     background: no-repeat center center url("/website_bootstrap/static/src/img/riverpark_card.webp");
+//     background-size: cover;
+//     position: relative;
+// }
+
+// .x_main_banner::before {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     z-index: 1;
+//     // z-index Ensure content inside the banner is above the overlay
+// }
+
+// .x_main_banner {
+//     position: relative;
+//     z-index: 2;
+// }
+
+
+
+.x_card_class {
     position: relative;
     // border: #fbff00;
     width: 200px;
     height: 200px;
-
+    padding: 10px;
 
     .card_description {
         position: absolute;
@@ -95,27 +125,78 @@
     }
 }
 
-.x_card_classes:hover {
-    background: #15b137;
-    transform: scale(1.5);
-    // height: auto;
-    border: #139930 solid 5px;
-    
 
+.x_card_class:hover {
+    transform: scale(1.5);
+    // height: auto;    
+    
     .card_description {
         visibility: visible;
         opacity: 1;
+        padding: 15px;
     }
-
-    .img {
+        
+    .x_card_img {
         visibility: hidden;
         opacity: 0;
     }
 }
+            
+// .img_height {
+//     height: 250px;
+// }
 
-.img_height {
-    height: 250px;
+
+.x_card_class1 {
+    background-image: linear-gradient(rgb(0, 255, 0) 0%, rgb(201, 236, 216) 100%);
 }
+
+.x_card_class1:hover {
+    background: #15b137;
+    border: #139930 solid 5px;
+}
+
+.x_card_class2 {
+    background-image: linear-gradient(rgb(255, 145, 0) 0%, rgb(201, 236, 216) 100%);
+}
+
+.x_card_class2:hover {
+    background: #ff9100;
+    border: #e97c01 solid 5px;
+}
+
+.x_card_class3 {
+    background-image: url(/website_bootstrap/static/src/img/drone.png);
+    background: rgba(10, 62, 231, 0.5);
+}
+
+.x_card_class3:hover {
+    background: #e722ac;
+    border: #cf0080 solid 5px;
+}
+
+.x_card_class4 {
+    background-image: linear-gradient(rgb(6, 136, 223) 0%, rgb(201, 236, 216) 100%);
+}
+
+.x_card_class4:hover {
+    background: #1f6af7;
+    border: #046baf solid 5px;
+}
+
+.x_card_class5 {
+    // background: #e6ecff;
+    background-image: linear-gradient(rgba(238, 248, 255, 0.473) 0%, rgb(201, 236, 216) 100%);
+}
+
+.x_card_class5:hover {
+    background: #e6ecff;
+    border: #ffffff solid 5px;
+    color: rgb(0, 0, 0);
+}
+
+
+
 
     // .x_card_classes {
     //     background-image: linear-gradient(rgb(0, 255, 0) 0%, rgb(201, 236, 216) 100%);
@@ -162,7 +243,7 @@
 
 .x_card_test {
     background-image: url(/website_bootstrap/static/src/img/nahlad.webp);
-    background-image: linear-gradient(rgb(0, 255, 0) 0%, rgb(201, 236, 216) 100%);
+    background-color: linear-gradient(rgb(0, 255, 0) 0%, rgb(201, 236, 216) 100%);
     // background:
     // linear-gradient(to bottom, rgba(221, 238, 227, 0.52), rgba(117, 19, 93, 0.73)),
     // url('/website_bootstrap/static/src/img/nahlad.webp') cover no-repeat;

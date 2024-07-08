@@ -27,13 +27,13 @@
                                     </div>
                                     <div class="col-lg-6 pt16 pb16">
                                         <!-- <svg xmlns="http://www.w3.org/2000/svg" style="max-width: 290.859375px;" viewBox="0 0 290.859375 421.78125">…</svg> -->
-                                        <img src="/website_bootstrap/static/src/img/drone.png" class="img img-fluid mx-auto" alt="" data-original-mimetype="image/png" data-file-name="01.svg" data-shape="theme_test_custo/blob/01" data-shape-colors=";;;;"/>
+                                        <img src="/website_bootstrap/static/src/img/drone.png" class="img img-fluid mx-auto" alt="" data-original-mimetype="image/png" data-file-name="01.svg" data-shape="{'shape':'illustration/bootstrap/news1','colors':{'c1':'#BBE1FA'},'flip':[]}" data-shape-colors=";;;;"/>
                                     </div>
                                 </div>
                             </div>
                         </section>
 
-                        <section class="s_text_block o_colored_level o-color-2 pt64 pb32" data-snippet="s_text_block" data-name="Text" style="background-image: linear-gradient(rgb(28, 30, 34) 0%, rgb(75, 85, 99) 100%);" data-oe-shape-data="{'shape':'illustration/airproof/waves2','colors':{'c1':'#BBE1FA'},'flip':[]}">
+                        <section class="s_text_block o_colored_level o-color-2 pt64 pb32" data-snippet="s_text_block" data-name="Text" data-oe-shape-data="{'shape':'illustration/bootstrap/news1','colors':{'c1':'#BBE1FA'},'flip':[]}">
                             <h1 class="fw-bold text-center text-o-color-4">WHAT'S NEW <strong class="x_stroke_text">IN OUR WORLD</strong></h1>
                             <div class="s_allow_columns o_container_large">
                                 <h2 class="fw-bold text-center text-o-color-4">NEWS</h2>

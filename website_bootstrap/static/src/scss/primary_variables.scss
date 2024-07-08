@@ -23,11 +23,24 @@ $o-website-values-palettes: (
     "btn-secondary-outline": false,
     "btn-primary-outline": false,
     // body-image is not necessary: you need to define a custom background shape
-    'body-image': '/website_airproof/static/src/img/background-lines.svg',
+    // 'body-image': '/website_bootstrap/static/src/img/news1.svg',
+    'custom-background-shape': '/website_bootstrap/static/src/img/news1.svg',
     'body-image-type': 'image' or 'pattern',
     'header-template': 'bootstrap',
-    // 'footer-template': 'airproof',
+    'footer-template': 'bootstrap',
   ),
+);
+
+
+$o-bg-shapes: map-merge($o-bg-shapes,
+    (
+        'illustration': map-merge(
+            map-get($o-bg-shapes, 'illustration') or (),
+            (
+                'bootstrap/news1': ('position': right bottom, 'size': auto 100%, 'colors': (1), 'repeat-y': false),
+            ),
+        ),
+    )
 );
 
 

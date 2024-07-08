@@ -2,11 +2,11 @@
 <odoo>
 
     <!-- Bg shapes -->
-    <record id="shape_waves" model="ir.attachment">
-        <field name="name">rdstest.svg</field>
-        <field name="datas" type="base64" file="website_bootstrap/static/src/img/bg-pattern-lecturers-shape.svg"/>
-        <field name="url">/web_editor/shape/illustration/bootstrap/rdstest.svg</field>
+    <!-- <record id="shape_news1" model="ir.attachment">
+        <field name="name">news1.svg</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/shapes/bootstrap/news1.svg"/>
+        <field name="url">/web_editor/shape/illustration/bootstrap/news1</field>
         <field name="public" eval="True"/>
-    </record>
+    </record> -->
 
 </odoo>

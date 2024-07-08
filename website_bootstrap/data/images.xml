@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="website.default_website" model="website">
+    <!-- <record id="website.default_website" model="website">
     <field name="logo-rdsag" type="base64" file="website_bootstrap/static/src/img/logo-rdsag.svg"/>
-    </record>
+    </record> -->
 
     <record id="website.default_website" model="website">
     <field name="drone.png" type="base64" file="website_bootstrap/static/src/img/drone.png"/>

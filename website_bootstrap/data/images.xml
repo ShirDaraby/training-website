@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <record id="logo_rdsag" model="ir.attachment">
+        <field name="name">logo-rdsag.svg</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/src/img/logo-rdsag.svg"/>
+    </record>
+
     <!-- <record id="website.default_website" model="website">
-    <field name="logo-rdsag" type="base64" file="website_bootstrap/static/src/img/logo-rdsag.svg"/>
+        <field name="drone.png" type="base64" file="website_bootstrap/static/src/img/drone.png"/>
     </record> -->
 
-    <record id="website.default_website" model="website">
-    <field name="drone.png" type="base64" file="website_bootstrap/static/src/img/drone.png"/>
+    <record id="img_news_letneclenstvo" model="ir.attachment">
+        <field name="name">letneclenstvo.webp</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/src/img/letneclenstvo.webp"/>
     </record>
 
-    <record id="website.default_website" model="website">
-    <field name="letneclenstvo" type="base64" file="website_bootstrap/static/src/img/letneclenstvo.webp"/>
+    <record id="img_news_IDOLWEEK" model="ir.attachment">
+        <field name="name">IDOLWEEK.webp</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/src/img/IDOLWEEK.webp"/>
     </record>
 
-    <record id="website.default_website" model="website">
-    <field name="IDOLWEEK" type="base64" file="website_bootstrap/static/src/img/IDOLWEEK.webp"/>
+    <record id="img_news_nahlad" model="ir.attachment">
+        <field name="name">nahlad.webp</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/src/img/nahlad.webp"/>
     </record>
 
-    <record id="website.default_website" model="website">
-    <field name="nahlad" type="base64" file="website_bootstrap/static/src/img/nahlad.webp"/>
-    </record>
-
-    <record id="website.default_website" model="website">
-    <field name="clanoknahlad" type="base64" file="website_bootstrap/static/src/img/clanoknahlad.webp"/>
+    <record id="img_news_clanoknahlad" model="ir.attachment">
+        <field name="name">clanoknahlad.webp</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/src/img/clanoknahlad.webp"/>
     </record>
 </odoo>

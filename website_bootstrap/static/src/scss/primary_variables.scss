@@ -38,6 +38,8 @@ $o-bg-shapes: map-merge($o-bg-shapes,
             map-get($o-bg-shapes, 'illustration') or (),
             (
                 'bootstrap/news1': ('position': right bottom, 'size': auto 100%, 'colors': (1), 'repeat-y': false),
+                'bootstrap/testpattern': ('position': right bottom, 'size': auto 100%, 'colors': (1), 'repeat-y': false),
+                'bootstrap/waves3': ('position': right bottom, 'size': auto 100%, 'colors': (3), 'repeat-y': false),
             ),
         ),
     )
@@ -76,14 +78,19 @@ $o-color-palettes: map-merge(
     $o-color-palettes,
    (
       'bootstrap': (
-         'o-color-1':                    #d3104d,
-         'o-color-2':                    rgb(28, 30, 34),
-         'o-color-3':                    #c4c4c4,
-         'o-color-4':                    #ffffff,
-         'o-color-5':                    #000000,
+        "o-color-1": #d3104d,
+        "o-color-2": #1c1e22,
+        "o-color-3": #c4c4c4,
+        "o-color-4": #ffffff,
+        "o-color-5": #000000,
+        'o-cc1-bg':  #ffffff,
+        'o-cc2-bg':  #0055ff,
+        'o-cc2-headings': 'o-color-1',
       ),
    )
 );
+
+
 
 $o-selected-color-palettes-names: append(
   $o-selected-color-palettes-names,
@@ -95,7 +102,7 @@ $o-selected-color-palettes-names: append(
 //     $o-color-palettes,
 //    (
 //       'bootstrap': (
-//          'o-cc*-bg':                     'o-color-3',
+//          'o-cc*-bg':                     'o-color-2',
 //          'o-cc*-text':                   'o-color-2',
 //          'o-cc*-headings':               'o-color-2',
 //          'o-cc*-h2':                     'o-color-2',

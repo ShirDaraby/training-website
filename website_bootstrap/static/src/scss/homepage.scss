@@ -44,6 +44,24 @@
     color: #ffffff00;
     // text-stroke: #000;
     // text-shadow: 0px 1px 4px #ffffff;
+
+    // .news {
+    //     -webkit-text-stroke-width: 1px;
+    // }
+
+    // .contact_booking {
+    //     -webkit-text-stroke-color: rgb(0, 0, 0) !important;
+    // }
+}
+
+.x_stroke_text_news {
+    -webkit-text-stroke-width: 1px;
+}
+
+.x_stroke_text_contact_booking {
+    -webkit-text-stroke-color: rgb(0, 0, 0) !important;
+    -webkit-text-stroke-width: 1px;
+
 }
 
 .nav-item-test {

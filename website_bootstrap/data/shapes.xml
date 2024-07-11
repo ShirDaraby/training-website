@@ -2,11 +2,45 @@
 <odoo>
 
     <!-- Bg shapes -->
-    <!-- <record id="shape_news1" model="ir.attachment">
+    <record id="shape_news1" model="ir.attachment">
         <field name="name">news1.svg</field>
         <field name="datas" type="base64" file="website_bootstrap/static/shapes/bootstrap/news1.svg"/>
-        <field name="url">/web_editor/shape/illustration/bootstrap/news1</field>
+        <field name="url">/web_editor/shape/illustration/bootstrap/news1.svg</field>
         <field name="public" eval="True"/>
-    </record> -->
+    </record>
 
+    <record id="shape_news2" model="ir.attachment">
+        <field name="name">testpattern.svg</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/shapes/bootstrap/testpattern.svg"/>
+        <field name="url">/web_editor/shape/illustration/bootstrap/testpattern.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="shape_news3" model="ir.attachment">
+        <field name="name">waves3.svg</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/shapes/bootstrap/waves3.svg"/>
+        <field name="url">/web_editor/shape/illustration/bootstrap/waves3.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="shape_news4" model="ir.attachment">
+        <field name="name">vecteezy_lines_abstract_background.svg</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/shapes/bootstrap/vecteezy_lines_abstract_background.svg"/>
+        <field name="url">/web_editor/shape/illustration/bootstrap/vecteezy_lines_abstract_background.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="shape_news5" model="ir.attachment">
+        <field name="name">933587_OD4FW01.svg</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/shapes/bootstrap/933587_OD4FW01.svg"/>
+        <field name="url">/web_editor/shape/illustration/bootstrap/933587OD4FW01.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="shape_news6" model="ir.attachment">
+        <field name="name">theme_graphene.svg</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/shapes/bootstrap/theme_graphene.svg"/>
+        <field name="url">/web_editor/shape/illustration/bootstrap/theme_graphene.svg</field>
+        <field name="public" eval="True"/>
+    </record>
 </odoo>

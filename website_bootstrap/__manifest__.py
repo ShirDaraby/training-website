@@ -24,6 +24,7 @@
       'data/pages/home.xml',
       'data/pages/lecturers.xml',
       'data/pages/news.xml',
+      'data/pages/contact_booking.xml',
    ],
 
     'assets': {

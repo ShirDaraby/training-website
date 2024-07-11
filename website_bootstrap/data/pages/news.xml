@@ -14,71 +14,57 @@
                 <t t-set="additional_title" t-value="'RDS News'"/>
                 <!-- Content -->
                 <t t-call="website.layout">
-                    <div id="wrap" class="oe_structure">
-                    
-                        <section class="s_text_image pt80 pb80">
-                            <div class="container">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6 pt16 pb16">
-                                        <h2>A Section Subtitle</h2>
-                                        <p>Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
-                                        <p>Start with the customer - find out what they want and give it to them.</p>
-                                        <p><a href="#" class="btn btn-primary">Learn more</a></p>
+                    <div id="wrap" class="oe_structure" style="background-image: linear-gradient(rgb(28, 30, 34) 100%, rgb(99, 103, 107) 85%);">
+                        <!-- <div style="background-image: url(/web_editor/shape/illustration/bootstrap/testpattern.svg?c1=%23BBE1FA);"> -->
+                        <div style="background-image: url(/web_editor/shape/illustration/bootstrap/waves3.svg?c1=%23BBE1FA);">
+                            
+
+                            <!-- <section class="s_text_block o-cc2-bg pt64 pb32" data-snippet="s_text_block" data-name="Text"> -->
+                            <section class="s_text_block o-cc2-bg pt64 pb32 container" data-snippet="s_text_block" data-name="Text">
+                                    <h3 class="fw-bold text-start text-o-color-4">WHAT'S NEW <strong class="x_stroke_text">IN OUR WORLD</strong></h3>
+                                    <div class="row d-flex justify-content-evely align-items-start" style="min-height: 325px;">
+                                        <div class="pt32 pb32 col-lg-3">
+                                        <a href="#">
+                                            <img src="website_bootstrap/static/src/img/clanoknahlad.webp" class="img img-fluid mx-auto rounded"/>
+                                            <h5 class="x_date fw-bold mt-3 text-start">Date</h5>
+                                            <h5 class="fw-bold mt-3 text-o-color-4 text-start">SILENT VIBE IS NEW IN THE SUMMER SCHEDULE</h5>
+                                            <p class="text-o-color-4 text-start">An hour where music becomes your private world. Feel like you're at a Silent Disco.</p>
+                                        </a>
+                                        </div>
+
+                                        <div class="pt32 pb32 col-lg-3">
+                                        <a href="#">
+                                            <img src="/website_bootstrap/static/src/img/nahlad.webp" class="img img-fluid mx-auto rounded"/>
+                                            <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
+                                            <h4 class="fw-bold mt-3 text-o-color-4 text-start">SUMMER SCHEDULE IN THE HOUSE OF ART</h4>
+                                            <p class="text-o-color-4 text-start">Check out the news that we have prepared for you in the summer schedule.</p>
+                                        </a>
+                                        </div>
+
+                                        <div class="pt32 pb32 col-lg-3">
+                                        <a href="#">
+                                            <img src="/website_bootstrap/static/src/img/IDOLWEEK.webp" class="img img-fluid mx-auto rounded"/>
+                                            <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
+                                            <h4 class="fw-bold mt-3 text-o-color-4 text-start">IDOL WEEK</h4>
+                                            <p class="text-o-color-4 text-start">An hour where music becomes your private world. Feel like you're at a Silent Disco.</p>
+                                        </a>
+                                        </div>
+
+                                        <div class="pt32 pb32 col-lg-3">
+                                        <a href="#">
+                                            <img src="/website_bootstrap/static/src/img/letneclenstvo.webp" class="img img-fluid mx-auto rounded" alt="Glasses icon" data-mimetype="image/webp"/>
+                                            <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
+                                            <h4 class="fw-bold mt-3 text-o-color-4 text-start">SUMMER MEMBERSHIP IN THE HOUSE OF ART</h4>
+                                            <p class="text-o-color-4 text-start">An hour where music becomes your private world. Feel like you're at a Silent Disco.</p>
+                                        </a>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 pt16 pb16">
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" style="max-width: 290.859375px;" viewBox="0 0 290.859375 421.78125">…</svg> -->
-                                        <img src="/website_bootstrap/static/src/img/drone.png" class="img img-fluid mx-auto" alt="" data-original-mimetype="image/png" data-file-name="01.svg" data-shape="{'shape':'illustration/bootstrap/news1','colors':{'c1':'#BBE1FA'},'flip':[]}" data-shape-colors=";;;;"/>
+                                    <div class="d-flex justify-content-center">
+                                        <p><a href="#" class="btn btn-primary x_btn_orange_red_gradient">I want to walk around the House of Art</a></p>
                                     </div>
-                                </div>
-                            </div>
-                        </section>
+                            </section>
 
-                        <section class="s_text_block o_colored_level o-color-2 pt64 pb32" data-snippet="s_text_block" data-name="Text" data-oe-shape-data="{'shape':'illustration/bootstrap/news1','colors':{'c1':'#BBE1FA'},'flip':[]}">
-                            <h1 class="fw-bold text-center text-o-color-4">WHAT'S NEW <strong class="x_stroke_text">IN OUR WORLD</strong></h1>
-                            <div class="s_allow_columns o_container_large">
-                                <h2 class="fw-bold text-center text-o-color-4">NEWS</h2>
-                            </div>
-                            <div class="row d-flex justify-content-center align-items-center" style="min-height: 325px;">
-                                <div class="pt32 pb32 col-lg-2 x_card_news">
-                                <a href="#">
-                                    <img src="website_bootstrap/static/src/img/clanoknahlad.webp" class="img img-fluid mx-auto rounded"/>
-                                    <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
-                                    <h4 class="fw-bold mt-3 text-o-color-4 text-start">SILENT VIBE IS NEW IN THE SUMMER SCHEDULE</h4>
-                                    <p class="text-o-color-4 text-start">An hour where music becomes your private world. Feel like you're at a Silent Disco.</p>
-                                </a>
-                                </div>
-
-                                <div class="pt32 pb32 col-lg-2 x_card_news">
-                                <a href="#">
-                                    <img src="/website_bootstrap/static/src/img/nahlad.webp" class="img img-fluid mx-auto rounded"/>
-                                    <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
-                                    <h4 class="fw-bold mt-3 text-o-color-4 text-start">SUMMER SCHEDULE IN THE HOUSE OF ART</h4>
-                                    <p class="text-o-color-4 text-start">Check out the news that we have prepared for you in the summer schedule.</p>
-                                </a>
-                                </div>
-
-                                <div class="pt32 pb32 col-lg-2 x_card_news">
-                                <a href="#">
-                                    <img src="/website_bootstrap/static/src/img/IDOLWEEK.webp" class="img img-fluid mx-auto rounded"/>
-                                    <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
-                                    <h4 class="fw-bold mt-3 text-o-color-4 text-start">IDOL WEEK</h4>
-                                    <p class="text-o-color-4 text-start">An hour where music becomes your private world. Feel like you're at a Silent Disco.</p>
-                                </a>
-                                </div>
-
-                                <div class="pt32 pb32 col-lg-2 x_card_news">
-                                <a href="#">
-                                    <img src="/website_bootstrap/static/src/img/letneclenstvo.webp" class="img img-fluid mx-auto rounded" alt="Glasses icon" data-mimetype="image/webp"/>
-                                    <h4 class="x_date fw-bold mt-3 text-start">Date</h4>
-                                    <h4 class="fw-bold mt-3 text-o-color-4 text-start">SUMMER MEMBERSHIP IN THE HOUSE OF ART</h4>
-                                    <p class="text-o-color-4 text-start">An hour where music becomes your private world. Feel like you're at a Silent Disco.</p>
-                                </a>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <p><a href="#" class="btn btn-primary x_btn_orange_red_gradient">I want to walk around the House of Art</a></p>
-                            </div>
-                        </section>
+                        </div>
                     </div>
                 </t>
             </t>

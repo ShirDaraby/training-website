@@ -10,6 +10,11 @@
         <field name="drone.png" type="base64" file="website_bootstrap/static/src/img/drone.png"/>
     </record> -->
 
+    <record id="img_booking_contact" model="website">
+        <field name="name">booking_contact.jpg</field>
+        <field type="base64" file="website_bootstrap/static/src/img/booking_contact.jpg"/>
+    </record>
+
     <record id="img_news_letneclenstvo" model="ir.attachment">
         <field name="name">letneclenstvo.webp</field>
         <field name="datas" type="base64" file="website_bootstrap/static/src/img/letneclenstvo.webp"/>
@@ -28,5 +33,10 @@
     <record id="img_news_clanoknahlad" model="ir.attachment">
         <field name="name">clanoknahlad.webp</field>
         <field name="datas" type="base64" file="website_bootstrap/static/src/img/clanoknahlad.webp"/>
+    </record>
+
+    <record id="img_news_class_logo" model="ir.attachment">
+        <field name="name">riverpark-logo.png</field>
+        <field name="datas" type="base64" file="website_bootstrap/static/src/img/riverpark-logo.png"/>
     </record>
 </odoo>

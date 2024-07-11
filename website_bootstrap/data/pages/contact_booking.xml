@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="page_contact_booking" model="website.page">
+        <field name="name">contact_booking</field>
+        <field name="is_published" eval="True"/>
+        <field name="key">website_bootstrap.page_contact_booking</field>
+        <field name="url">/contact_booking</field>
+        <field name="website_id">1</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t name="Home" t-name="website_bootstrap.page_contact_booking">
+                <!-- Title -->
+                <t t-set="additional_title" t-value="'contact booking'"/>
+                <!-- Content -->
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure">
+                        <section class="s_text_image pt80 pb80 o-color-4">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 pt16 pb16">
+                                        <h3 class="fw-bold text-start text-o-color-2">LET YOUR EVENT <strong class="x_stroke_text x_stroke_text_contact_booking">COME ALIVE WITH DANCING OR SINGING</strong></h3>
+                                        <p>If you need to add a dance performance to your event, celebration or other important event for you, our dancers and instructors will be happy to accommodate you. <strong> You can choose from rehearsed choreographies, but we have no problem adapting completely to your requirements and preparing a tailor-made choreography for you.</strong></p>
+                                        <p>Our repertoire includes <strong>choreographies focusing on classical, jazz, contemporary and showdance.</strong> We also offer all <strong>street styles from hip hop to house, popping, locking, waacking, </strong>vogue and dancehall. Our portfolio also <strong>includes the current phenomenon of the K-POP dance scene, </strong>which can also perfectly enliven an event for children or adults. In addition to dancing, you can also choose a singing performance by the singers of the Musical Academy.</p>
+                                        <p><a href="#" class="btn btn-primary">Learn more</a></p>
+                                    </div>
+                                    <div class="col-lg-6 pt16 pb16">
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" style="max-width: 290.859375px;" viewBox="0 0 290.859375 421.78125">…</svg> -->
+                                        <img src="/website_bootstrap/static/src/img/booking_contact.jpg" class="img img-fluid mx-auto rounded" alt="" data-original-mimetype="image/jpg" data-shape="{'shape':'illustration/bootstrap/news1','colors':{'c1':'#BBE1FA'},'flip':[]}" data-shape-colors=";;;;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="s_title pt40 pb40" data-vcss="001" data-oe-model="ir.ui.view" data-oe-field="arch" data-snippet="s_title">
+                            <div class="container s_allow_columns">
+                                <h3 class="fw-bold text-start text-o-color-2">BOOK <strong class="x_stroke_text x_stroke_text_contact_booking">A DANCE OR SINGING PERFORMANCE</strong></3>
+                                <!-- <h3>test</h3> -->
+                            </div>
+                        </section>
+
+                        <section class="s_title pt40 pb40" data-vcss="001" data-oe-model="ir.ui.view" data-oe-id="962" data-oe-field="arch" data-oe-xpath="/t[1]/section[1]" data-snippet="s_title">
+                            <div class="container s_allow_columns">
+                                <h2 class="display-3-fs" style="text-align: center;">Your Site Title</h2>
+                            </div>
+                        </section>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

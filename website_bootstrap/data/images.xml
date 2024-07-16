@@ -6,13 +6,9 @@
         <field name="datas" type="base64" file="website_bootstrap/static/src/img/logo-rdsag.svg"/>
     </record>
 
-    <!-- <record id="website.default_website" model="website">
-        <field name="drone.png" type="base64" file="website_bootstrap/static/src/img/drone.png"/>
-    </record> -->
-
-    <record id="img_booking_contact" model="website">
+    <record id="img_booking_contact" model="ir.attachment">
         <field name="name">booking_contact.jpg</field>
-        <field type="base64" file="website_bootstrap/static/src/img/booking_contact.jpg"/>
+        <field name="datas" type="base64" file="website_bootstrap/static/src/img/booking_contact.jpg"/>
     </record>
 
     <record id="img_news_letneclenstvo" model="ir.attachment">
@@ -39,4 +35,5 @@
         <field name="name">riverpark-logo.png</field>
         <field name="datas" type="base64" file="website_bootstrap/static/src/img/riverpark-logo.png"/>
     </record>
+    
 </odoo>

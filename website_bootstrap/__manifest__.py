@@ -19,7 +19,10 @@
       'data/shapes.xml',
       'data/blog_snippet_template_data.xml',
       'views/website_template.xml',
+      # Snippets
       'views/snippets/options.xml',
+      'views/snippets/s_rdsart_newsletter.xml',
+      'views/snippets/s_rdsart_carousel.xml',
       # pages
       'data/pages/home.xml',
       'data/pages/lecturers.xml',
@@ -31,6 +34,7 @@
     'web._assets_primary_variables': [
       'website_bootstrap/static/src/scss/primary_variables.scss',
       'website_bootstrap/static/src/scss/homepage.scss',
+      'website_bootstrap/static/src/scss/contact_booking.scss',
    ],
 },
 }

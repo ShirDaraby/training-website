@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_rdsart_newsletter" name="Newsletter custom rds art">
+        <section class="s_rdsart_newsletter pt48 pb48" style="background-image:linear-gradient(267.58deg, #f61f62 -18.15%, #3cdbc0 .13%, #b100ef 125.34%);" data-name="Newsletter custom rds art">
+            <div class="container">
+                <div class="row d-flex flex-row align-items-center">
+                    <div class="pt8 pb8 o_colored_level col-lg-4">
+                        <h3 class="text-start text-white fw-bold">
+                            LET'S STAY
+                            <br/>
+                            <strong class="x_stroke_text x_stroke_text_newsletter">
+                            IN TOUCH</strong>
+                        </h3>
+                        <!-- <p>Don't miss the newsletter with news and special offers !</p> -->
+                    </div>
+
+                    <div class="pt8 pb8 o_colored_level col-lg-8">
+                        <div class="s_newsletter_subscribe_form s_newsletter_list js_subscribe" data-vxml="001" data-list-id="0" data-name="Newsletter Form" data-snippet="s_newsletter_subscribe_form">
+                            <div class="input-group row align-items-center">
+                                <a role="button" href="#" class="col-3 btn x_btn_orange_red_gradient js_subscribe_btn o_submit btn btn-custom text-o-color-1 bg-o-color-2">
+                                    <strong>Subscribe</strong>
+                                </a>
+                                <div class="col-6">
+                                    <input type="email" name="email" class="js_subscribe_email form-control" placeholder="@"/>
+                                    <div name="website_sale_terms_and_conditions_checkbox" class="form-check mt-8 mb-2">
+                                        <input type="checkbox" id="website_sale_tc_checkbox" class="form-check-input"/>
+                                        <label for="website_sale_tc_checkbox" class="form-check-label">
+                                            I agree to the <a target="_BLANK" href="/terms">terms &amp; conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <a role="button" href="#" class="btn btn-success js_subscribed_btn o_submit d-none" disabled="disabled">Thanks</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </template>
+        
+</odoo>

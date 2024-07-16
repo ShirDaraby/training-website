@@ -8,7 +8,7 @@
 
 .x_btn_orange_red_gradient {
     background-image: linear-gradient(to left, rgb(255, 102, 0), #d3104d);
-    color: #ffffff;
+    color: #ffffff !important;
     margin: 20px;
     padding: 20px;
     font-weight: 700;
@@ -58,8 +58,8 @@
     -webkit-text-stroke-width: 1px;
 }
 
-.x_stroke_text_contact_booking {
-    -webkit-text-stroke-color: rgb(0, 0, 0) !important;
+.x_stroke_text_newsletter {
+    -webkit-text-stroke-color: rgb(255, 255, 255) !important;
     -webkit-text-stroke-width: 1px;
 
 }
@@ -160,9 +160,9 @@
     }
 }
             
-// .img_height {
-//     height: 250px;
-// }
+.img_height {
+    height: 250px;
+}
 
 
 .x_card_class1 {

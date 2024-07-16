@@ -1,0 +1,22 @@
+.x_stroke_text_contact_booking {
+    -webkit-text-stroke-color: rgb(0, 0, 0) !important;
+    -webkit-text-stroke-width: 1px;
+    color: #ffffff !important;
+}
+
+
+.s_rdsart_carousel {
+    display: inline;
+    overflow-x: auto;
+    // background: #ffffff;
+}
+
+.s_rdsart_carousel::-webkit-scrollbar {
+    width: 0;
+}
+
+// .p_test {
+//     color: rgb(0, 214, 0);
+//     font-size: 54px;
+//     font-weight: 700;
+// }

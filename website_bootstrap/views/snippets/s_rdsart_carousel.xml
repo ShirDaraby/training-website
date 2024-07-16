@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_rdsart_carousel" name="carousel custom rds art">
+        <section class="s_rdsart_carousel bg-white pt48 pb48" data-name="carousel custom rds art overflow-auto">
+            <div class="container row d-flex align-items-stretch justify-content-between">
+                <div class="col s_col_no_bgcolor pt16 pb16">
+                    <img class="img_height rounded card-img-top mb-4" src="/website_bootstrap/static/src/img/olga.jpg" alt=""/>
+                    <div class="text-bg-white">
+                        <div>
+                            <h6 class="fw-bold text-center text-light">Lecturer</h6>
+                            <h5 class="fw-bold text-center">Tomas drafi</h5>
+                            <p class="card-text text-center">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s_col_no_bgcolor pt16 pb16">
+                    <img class="img_height rounded card-img-top mb-4" src="/website_bootstrap/static/src/img/Monika.jpg" alt=""/>
+                    <div class="text-bg-white">
+                        <div>
+                            <h6 class="fw-bold text-center text-light">Lecturer</h6>
+                            <h5 class="fw-bold text-center">Tomas drafi</h5>
+                            <p class="card-text text-center">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s_col_no_bgcolor pt16 pb16">
+                    <img class="img_height rounded card-img-top mb-4" src="/website_bootstrap/static/src/img/Mari-min2.jpg" alt=""/>
+                    <div class="text-bg-white">
+                        <div>
+                            <h6 class="fw-bold text-center text-light">Lecturer</h6>
+                            <h5 class="fw-bold text-center">Tomas drafi</h5>
+                            <p class="card-text text-center">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s_col_no_bgcolor pt16 pb16">
+                    <img class="img_height rounded card-img-top mb-4" src="/website_bootstrap/static/src/img/Mari raneta min.jpg" alt=""/>
+                    <div class="text-bg-white">
+                        <div>
+                            <h6 class="fw-bold text-center text-light">Lecturer</h6>
+                            <h5 class="fw-bold text-center">Tomas drafi</h5>
+                            <p class="card-text text-center">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s_col_no_bgcolor pt16 pb16">
+                    <img class="img_height rounded card-img-top mb-4" src="/website_bootstrap/static/src/img/Lucka-min 1.jpg" alt=""/>
+                    <div class="text-bg-white">
+                        <div>
+                            <h6 class="fw-bold text-center text-light">Lecturer</h6>
+                            <h5 class="fw-bold text-center">Tomas drafi</h5>
+                            <p class="card-text text-center">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s_col_no_bgcolor pt16 pb16">
+                    <img class="img_height rounded card-img-top mb-4" src="/website_bootstrap/static/src/img/Mari-min2.jpg" alt=""/>
+                    <div class="text-bg-white">
+                        <div>
+                            <h6 class="fw-bold text-center text-light">Lecturer</h6>
+                            <h5 class="fw-bold text-center">Tomas drafi</h5>
+                            <p class="card-text text-center">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s_col_no_bgcolor pt16 pb16">
+                    <img class="img_height rounded card-img-top mb-4" src="/website_bootstrap/static/src/img/Lucka-min 1.jpg" alt=""/>
+                    <div class="text-bg-white">
+                        <div>
+                            <h6 class="fw-bold text-center text-light">Lecturer</h6>
+                            <h5 class="fw-bold text-center">Tomas drafi</h5>
+                            <p class="card-text text-center">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s_col_no_bgcolor pt16 pb16">
+                    <img class="img_height rounded card-img-top mb-4" src="/website_bootstrap/static/src/img/Mari-min2.jpg" alt=""/>
+                    <div class="text-bg-white">
+                        <div>
+                            <h6 class="fw-bold text-center text-light">Lecturer</h6>
+                            <h5 class="fw-bold text-center">Tomas drafi</h5>
+                            <p class="card-text text-center">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s_col_no_bgcolor pt16 pb16">
+                    <img class="img_height rounded card-img-top mb-4" src="/website_bootstrap/static/src/img/Monika.jpg" alt=""/>
+                    <div class="text-bg-white">
+                        <div>
+                            <h6 class="fw-bold text-center text-light">Lecturer</h6>
+                            <h5 class="fw-bold text-center">Tomas drafi</h5>
+                            <p class="card-text text-center">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+        
+</odoo>
